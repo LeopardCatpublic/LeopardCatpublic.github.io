@@ -30,8 +30,8 @@ body {
     bottom: 1%;
     z-index: 2;
 
-    img{
-        width:100px;
+    img {
+        width: 100px;
     }
 }
 
@@ -177,7 +177,7 @@ body {
     //以免nav擋到內文
     width: 100vw;
     height: 1080px;
-    background-color:$backgroundcolor;
+    background-color: $backgroundcolor;
     text-align: center;
     padding-bottom: 56px;
     position: relative;
@@ -188,42 +188,53 @@ body {
 
     .container {
         margin: auto;
+
         #tab {
             margin: auto;
             margin-top: 227px;
         }
+
         .tab_btn_content {
             display: flex;
-            justify-content:space-between;
+            justify-content: space-between;
             cursor: pointer;
         }
+
         .tab_btn {
-            
-            width:148px;
+
+            width: 148px;
             color: $title-textcolor;
             font-size: $subtitle;
         }
+
         .context_article {
             display: none;
-            text-align:justify;
+            text-align: justify;
             // padding: 30px;
             font-size: $text;
             color: $textcolor;
         }
+
         .tab_btn.active {
             border: 1px solid black;
             border-radius: 50px;
         }
+
         .context_article.active {
             display: block;
             border-top: none;
         }
+
         //tab
         .intro_card2 {
-            margin-top:171px;
+            margin-top: 171px;
+
             .title {
-                font-size: $title-text;
-                color: $title-textcolor;
+                h1 {
+                    font-size: $title-text;
+                    color: $title-textcolor;
+                }
+
             }
         }
     }
