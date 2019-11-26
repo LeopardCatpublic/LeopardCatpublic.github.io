@@ -189,7 +189,7 @@ body {
     .container {
         margin: auto;
 
-        #tab {
+        .tab {
             margin: auto;
             margin-top: 227px;
 
@@ -227,9 +227,8 @@ body {
             }
         }
 
-        .intro_card2 {
+        .intro_title {
             margin-top: 171px;
-
             .title {
                 p {
                     font-size: $title-text;

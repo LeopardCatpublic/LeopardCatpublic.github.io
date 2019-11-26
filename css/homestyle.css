@@ -158,12 +158,12 @@ body {
   margin: auto;
 }
 
-.section2 .container #tab {
+.section2 .container .tab {
   margin: auto;
   margin-top: 227px;
 }
 
-.section2 .container .tab_btn_content {
+.section2 .container .tab .tab_btn_content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -173,34 +173,34 @@ body {
   cursor: pointer;
 }
 
-.section2 .container .tab_btn {
+.section2 .container .tab .tab_btn_content .tab_btn {
   width: 148px;
   color: #4e4e4e;
   font-size: 44px;
 }
 
-.section2 .container .context_article {
+.section2 .container .tab .tab_btn_content .tab_btn.active {
+  border: 1px solid black;
+  border-radius: 50px;
+}
+
+.section2 .container .tab .context .context_article {
   display: none;
   text-align: justify;
   font-size: 38px;
   color: #828282;
 }
 
-.section2 .container .tab_btn.active {
-  border: 1px solid black;
-  border-radius: 50px;
-}
-
-.section2 .container .context_article.active {
+.section2 .container .tab .context .context_article.active {
   display: block;
   border-top: none;
 }
 
-.section2 .container .intro_card2 {
+.section2 .container .intro_title {
   margin-top: 171px;
 }
 
-.section2 .container .intro_card2 .title {
+.section2 .container .intro_title .title p {
   font-size: 64px;
   color: #4e4e4e;
 }
