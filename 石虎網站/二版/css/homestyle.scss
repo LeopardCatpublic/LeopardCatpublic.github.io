@@ -1,0 +1,429 @@
+$title-textcolor:#4e4e4e;
+$textcolor:#828282;
+$hovercolor:#ffffff;
+$title-text:64px;
+$subtitle:44px;
+$text:38px;
+$nav-text:24px;
+$nav-backgroundcolor:#bdc0ba;
+$backgroundcolor:#ededed;
+
+
+$bordercolor : #000000;
+$title-textcolor : #4e4e4e;
+$dropDown : true;
+
+html {
+    margin: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    position: relative;
+}
+
+.backtotop {
+    position: fixed;
+    right: 1%;
+    bottom: 1%;
+    z-index: 2;
+
+    img{
+        width:100px;
+    }
+}
+
+//nav滾動效果
+.section1 {
+    background-color: rgb(209, 209, 209);
+    text-align: center;
+    width: 100vw;
+    height: 1080px;
+    position: relative;
+    z-index: 3;
+
+    .banner1 {
+        background-color: rgb(129, 129, 129);
+        width: 150px;
+        margin: auto;
+        margin-top: 50px;
+    }
+}
+
+.navbar {
+    background-color: $nav-backgroundcolor;
+    position: sticky;
+    width: 100vw;
+    height: 110px;
+    font-size: $nav-text;
+    margin: auto;
+
+    #logoimg {
+        width: 217px;
+    }
+
+    .container_fluid {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0 170px;
+    }
+
+    .navbar-brand {
+        color: $title-textcolor;
+
+        &:hover,
+        &:focus {
+            color: $hovercolor;
+        }
+    }
+
+
+
+    .navbar-text {
+        color: $title-textcolor;
+
+        a {
+            color: $hovercolor;
+
+            &:hover,
+            &:focus {
+                color: $hovercolor;
+            }
+        }
+    }
+
+    .navbar-nav {
+        .nav-link {
+            color: $title-textcolor;
+            border-radius: .25rem;
+            margin: 0 0.25em;
+
+            &:not(.disabled) {
+
+                &:hover,
+                &:focus {
+                    color: $hovercolor;
+                }
+            }
+        }
+
+        @if ($dropDown) {
+            padding: 10px;
+
+            .dropdown-menu {
+                background-color: $backgroundcolor;
+                border-color: $bordercolor;
+
+                .dropdown-item {
+                    color: $title-textcolor;
+
+                    &:hover,
+                    &:focus,
+                    &.active {
+                        color: $hovercolor;
+
+                    }
+                }
+
+                .dropdown-divider {
+                    border-top-color: $bordercolor;
+
+                }
+            }
+        }
+
+    }
+
+    .navbar-toggle {
+        border-color: $bordercolor;
+
+        &:hover,
+        &:focus {
+            background-color: $bordercolor;
+        }
+
+        .navbar-toggler-icon {
+            color: $title-textcolor;
+        }
+    }
+
+    .navbar-collapse,
+    .navbar-form {
+        background-color: $nav-backgroundcolor;
+        border-color: $title-textcolor;
+    }
+
+    .navbar-link {
+        color: $title-textcolor;
+
+        &:hover {
+            color: $hovercolor;
+        }
+    }
+}
+
+
+//使navbar黏在第二頁上
+
+// .container {
+//     border: 1px solid black;
+// } //用來看12欄位邊界
+
+.section2 {
+    padding-top: 110px;
+    //以免nav擋到內文
+    width: 100vw;
+    height: 1080px;
+    background-color:$backgroundcolor;
+    text-align: center;
+    padding-bottom: 56px;
+    position: relative;
+
+    @media (max-width:1200px) {
+        height: unset;
+    }
+
+    .container {
+        margin: auto;
+        #tab {
+            margin: auto;
+            margin-top: 227px;
+        }
+        .tab_btn_content {
+            display: flex;
+            justify-content:space-between;
+            cursor: pointer;
+        }
+        .tab_btn {
+            
+            width:148px;
+            color: $title-textcolor;
+            font-size: $subtitle;
+        }
+        .context_article {
+            display: none;
+            text-align:justify;
+            // padding: 30px;
+            font-size: $text;
+            color: $textcolor;
+        }
+        .tab_btn.active {
+            border: 1px solid black;
+            border-radius: 50px;
+        }
+        .context_article.active {
+            display: block;
+            border-top: none;
+        }
+        //tab
+        .intro_card2 {
+            margin-top:171px;
+            .title {
+                font-size: $title-text;
+                color: $title-textcolor;
+            }
+        }
+    }
+}
+
+
+.section3 {
+    padding-top: 110px;
+    background-color: rgb(209, 209, 209);
+    text-align: center;
+    width: 100vw;
+    height: 1080px;
+    position: relative;
+
+    @media (max-width:1200px) {
+        height: unset;
+    }
+
+    .container {
+        margin: auto;
+
+        .distr_card1 {
+            .text {
+                background-color: rgb(129, 129, 129);
+                margin: auto;
+                padding: 20px;
+
+                p {
+                    margin: 0;
+                }
+            }
+
+            // .timeline {
+            //     //時間軸
+            // }
+        }
+
+        .distr_card2 {
+            //mapimage
+            background-color: blanchedalmond;
+            height: 600px;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+
+.section4 {
+    padding-top: 110px;
+    background-color: rgb(121, 121, 121);
+    text-align: center;
+    width: 100vw;
+    height: 1080px;
+    position: relative;
+
+    @media (max-width:1200px) {
+        height: unset;
+    }
+
+
+    .banner4 {
+        background-color: rgb(129, 129, 129);
+        width: 150px;
+        margin: auto;
+        margin-top: 50px;
+    }
+
+}
+
+.section5 {
+    padding-top: 180px; //nav110+padding70
+    padding-bottom: 66px;
+    background-color: rgb(209, 209, 209);
+    text-align: center;
+    width: 100vw;
+    // height: 1080px;
+    position: relative;
+
+    @media (max-width:1200px) {
+        height: unset;
+    }
+
+    .text {
+        .title {
+            font-size: $title-text;
+            margin-bottom: 60px;
+        }
+
+        p {
+            font-size: $text;
+            margin-bottom: 85px;
+        }
+
+    }
+
+    .container-fluid {
+        margin: 0 auto;
+        padding: 0 70px;
+        width: unset;
+
+    }
+
+    .col-xl-3 {
+        width: 400px;
+    }
+
+    .box1 {
+        width: 400px;
+        display: flex;
+        justify-content: space-evenly;
+        margin: auto;
+        padding-bottom: 66px;
+    }
+
+    .swiper-container {
+        width: 400px;
+        height: 400px;
+        padding: 0px;
+        margin: 10px 0px;
+    }
+
+    .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        border-radius: 50%;
+        width: 300px;
+        height: 400px;
+    }
+
+}
+
+.section6 {
+    padding-top: 110px;
+    background-color: rgb(121, 121, 121);
+    text-align: center;
+    width: 100vw;
+    height: 1080px;
+    position: relative;
+
+    @media (max-width:1200px) {
+        height: unset;
+
+    }
+
+    .swiper-container {
+        width: 70%;
+    }
+
+    .swiper-wrapper {
+
+        height: 500px;
+        margin: 20px 0;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        /* Center slide text vertically */
+
+        display: flex;
+
+        justify-content: center;
+
+        align-items: center;
+    }
+
+    .swiper-button-next {
+        color: black;
+
+    }
+}
+
+
+.section7 {
+    padding-top: 110px;
+    background-color: rgb(209, 209, 209);
+    text-align: center;
+    width: 100vw;
+    height: 1080px;
+    position: relative;
+
+    @media (max-width:1200px) {
+        height: unset;
+    }
+
+    .banner7 {
+        background-color: rgb(129, 129, 129);
+        width: 150px;
+        margin: auto;
+        margin-top: 50px;
+    }
+
+}
+
+footer {
+    background-color: rgb(121, 121, 121);
+    text-align: center;
+    margin: auto;
+    width: 100vw;
+    height: 145px;
+    line-height: 145px;
+}
