@@ -192,40 +192,41 @@ body {
         #tab {
             margin: auto;
             margin-top: 227px;
+
+            .tab_btn_content {
+                display: flex;
+                justify-content: space-between;
+                cursor: pointer;
+
+                .tab_btn {
+
+                    width: 148px;
+                    color: $title-textcolor;
+                    font-size: $subtitle;
+                }
+
+                .tab_btn.active {
+                    border: 1px solid black;
+                    border-radius: 50px;
+                }
+            }
+
+            .context {
+                .context_article {
+                    display: none;
+                    text-align: justify;
+                    // padding: 30px;
+                    font-size: $text;
+                    color: $textcolor;
+                }
+
+                .context_article.active {
+                    display: block;
+                    border-top: none;
+                }
+            }
         }
 
-        .tab_btn_content {
-            display: flex;
-            justify-content: space-between;
-            cursor: pointer;
-        }
-
-        .tab_btn {
-
-            width: 148px;
-            color: $title-textcolor;
-            font-size: $subtitle;
-        }
-
-        .context_article {
-            display: none;
-            text-align: justify;
-            // padding: 30px;
-            font-size: $text;
-            color: $textcolor;
-        }
-
-        .tab_btn.active {
-            border: 1px solid black;
-            border-radius: 50px;
-        }
-
-        .context_article.active {
-            display: block;
-            border-top: none;
-        }
-
-        //tab
         .intro_card2 {
             margin-top: 171px;
 
@@ -234,7 +235,6 @@ body {
                     font-size: $title-text;
                     color: $title-textcolor;
                 }
-
             }
         }
     }
