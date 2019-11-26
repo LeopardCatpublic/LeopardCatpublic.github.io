@@ -327,22 +327,18 @@ body {
             font-size: $text;
             margin-bottom: 85px;
         }
-
     }
-
     .container-fluid {
         margin: 0 auto;
         padding: 0 70px;
         width: unset;
-
     }
-
     .col-xl-3 {
-        width: 400px;
+        // width: 320px;
     }
 
     .box1 {
-        width: 400px;
+        // width: 400px;
         display: flex;
         justify-content: space-evenly;
         margin: auto;
@@ -350,8 +346,7 @@ body {
     }
 
     .swiper-container {
-        width: 400px;
-        height: 400px;
+        width: 320px;
         padding: 0px;
         margin: 10px 0px;
     }
@@ -360,8 +355,7 @@ body {
         background-position: center;
         background-size: cover;
         border-radius: 50%;
-        width: 300px;
-        height: 400px;
+        height: 320px;
     }
 
 }
