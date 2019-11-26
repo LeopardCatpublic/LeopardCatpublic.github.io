@@ -21,9 +21,9 @@ var swiper_news;
 $(document).ready(function () {
   $(window).resize(function () {
     wdth = $(window).width();
-    if (wdth <= 1200) {
+    if (wdth >= 1200) {
       swiper_news = new Swiper('#news_swiper', {
-        slidesPerView: 1,
+        slidesPerView: 3,
         spaceBetween: 30,
         slidesPerGroup: 1,
         loop: true,
@@ -40,10 +40,11 @@ $(document).ready(function () {
           prevEl: '.swiper-button-prev',
         },
       });
+
     }
     else {
       swiper_news = new Swiper('#news_swiper', {
-        slidesPerView: 3,
+        slidesPerView: 1,
         spaceBetween: 30,
         slidesPerGroup: 1,
         loop: true,
