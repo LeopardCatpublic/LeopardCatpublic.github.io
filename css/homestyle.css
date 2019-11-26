@@ -427,6 +427,7 @@ footer .container .row .text {
 }
 
 footer .container .row .text p {
+  text-align: center;
   width: 100%;
   position: absolute;
   top: 50%;
