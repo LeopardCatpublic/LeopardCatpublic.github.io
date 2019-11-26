@@ -392,10 +392,46 @@ body {
 
 footer {
   background-color: #797979;
-  text-align: center;
-  margin: auto;
   width: 100vw;
   height: 145px;
-  line-height: 145px;
+  position: relative;
+}
+
+@media (max-width: 1200px) {
+  footer #img {
+    opacity: 0;
+  }
+}
+
+footer .container {
+  position: relative;
+  height: 100%;
+}
+
+footer .container .row {
+  height: 100%;
+}
+
+footer .container .row #img {
+  height: 97px;
+  width: 217px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+footer .container .row .text {
+  position: relative;
+  height: 100%;
+}
+
+footer .container .row .text p {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: block;
 }
 /*# sourceMappingURL=homestyle.css.map */

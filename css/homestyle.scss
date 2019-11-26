@@ -229,6 +229,7 @@ body {
 
         .intro_title {
             margin-top: 171px;
+
             .title {
                 p {
                     font-size: $title-text;
@@ -431,9 +432,46 @@ body {
 
 footer {
     background-color: rgb(121, 121, 121);
-    text-align: center;
-    margin: auto;
+    // margin: auto;
     width: 100vw;
     height: 145px;
-    line-height: 145px;
+    position: relative;
+
+    @media (max-width:1200px) {
+        #img {
+            opacity: 0;
+        }
+    }
+
+    .container {
+        position: relative;
+        height: 100%;
+
+        .row {
+            height: 100%;
+
+            #img {
+                height: 97px;
+                width: 217px;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            .text {
+                position: relative;
+                height: 100%;
+
+                p {
+                    // text-align: right;
+                    width: 100%;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    display: block;
+
+                }
+            }
+        }
+    }
 }
