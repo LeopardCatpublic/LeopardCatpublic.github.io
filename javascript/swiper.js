@@ -21,7 +21,7 @@ var swiper_news = new Swiper('#news_swiper', {
 $(document).ready(function () {
   $(window).resize(function () {
     wdth = $(window).width();
-    alert(wdth);
+    
     if (wdth >= 1200) {
       swiper_news = new Swiper('#news_swiper', {
         slidesPerView: 3,
