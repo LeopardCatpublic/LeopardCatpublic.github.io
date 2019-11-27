@@ -249,17 +249,63 @@ body {
   position: relative;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1920px) {
   .section4 {
     height: unset;
   }
+  .section4 .swiper-slide {
+    width: 945px !important;
+    height: 466px;
+  }
 }
 
-.section4 .banner4 {
-  background-color: #818181;
-  width: 150px;
-  margin: auto;
-  margin-top: 50px;
+@media (max-width: 1400px) {
+  .section4 {
+    height: unset;
+  }
+  .section4 .swiper-slide {
+    width: 50% !important;
+  }
+}
+
+.section4 .swiper-container {
+  padding: 135px 0;
+  width: 100%;
+  height: 100%;
+}
+
+.section4 .swiper-slide {
+  width: 945px;
+  height: 466px;
+  border: 1px solid black;
+  text-align: center;
+  font-size: 18px;
+  background: #6e6767;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60%;
+}
+
+.section4 .swiper-slide:nth-child(2n) {
+  width: 40%;
+}
+
+.section4 .swiper-slide:nth-child(3n) {
+  width: 20%;
+}
+
+.section4 .swiper-slide-active {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  z-index: 2;
 }
 
 .section5 {
