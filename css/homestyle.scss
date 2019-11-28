@@ -230,6 +230,7 @@ body {
                     color: $title-textcolor;
                     font-size: $subtitle;
                     margin-bottom: 75px;
+                    // line-height: 70px;
                 }
 
                 .tab_btn.active {
@@ -263,6 +264,7 @@ body {
                 p {
                     font-size: $title-text;
                     color: $title-textcolor;
+                    line-height: 70px;
                 }
             }
         }
@@ -293,6 +295,7 @@ body {
 
                 p {
                     margin: 0;
+                   
                 }
             }
 
@@ -431,11 +434,13 @@ body {
         .title {
             font-size: $title-text;
             margin-bottom: 60px;
+            line-height: $title-text;
         }
 
         p {
             font-size: $text;
             margin-bottom: 85px;
+            line-height:$text;
         }
     }
 

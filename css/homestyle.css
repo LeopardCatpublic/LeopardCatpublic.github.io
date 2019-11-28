@@ -213,6 +213,7 @@ body {
 .section2 .container .intro_title .title p {
   font-size: 64px;
   color: #4e4e4e;
+  line-height: 70px;
 }
 
 .section3 {
@@ -362,11 +363,13 @@ body {
 .section5 .text .title {
   font-size: 64px;
   margin-bottom: 60px;
+  line-height: 64px;
 }
 
 .section5 .text p {
   font-size: 38px;
   margin-bottom: 85px;
+  line-height: 38px;
 }
 
 .section5 .container-fluid {
