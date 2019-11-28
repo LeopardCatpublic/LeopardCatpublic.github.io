@@ -480,10 +480,30 @@ body {
 }
 
 footer {
-  background-color: #797979;
+  background-color: #bdc0ba;
   width: 100vw;
   height: 145px;
   position: relative;
+}
+
+@media (max-width: 1920px) {
+  footer p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    font-size: 24px;
+    color: #4e4e4e;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    display: block;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -516,6 +536,8 @@ footer .container .row .text {
 }
 
 footer .container .row .text p {
+  font-size: 24px;
+  color: #4e4e4e;
   text-align: center;
   width: 100%;
   position: absolute;

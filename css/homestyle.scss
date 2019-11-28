@@ -539,12 +539,26 @@ body {
 }
 
 footer {
-    background-color: rgb(121, 121, 121);
+    background-color: $nav-backgroundcolor;
     // margin: auto;
     width: 100vw;
     height: 145px;
     position: relative;
+    @media (max-width:1920px) {
+        p {
+            display: flex;
+            justify-content: flex-end;
+            font-size: $nav-text;
+            color: $title-textcolor;
+            text-align: center;
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            display: block;
 
+        }
+    }
     @media (max-width:1200px) {
         #img {
             opacity: 0;
@@ -571,6 +585,8 @@ footer {
                 height: 100%;
 
                 p {
+                    font-size: $nav-text;
+                    color: $title-textcolor;
                     text-align: center;
                     width: 100%;
                     position: absolute;
