@@ -7,7 +7,8 @@ $text:38px;
 $nav-text:24px;
 $nav-backgroundcolor:#bdc0ba;
 $backgroundcolor:#ededed;
-
+$fontfamily: 'Noto Sans TC',
+sans-serif;
 
 $bordercolor : #000000;
 $title-textcolor : #4e4e4e;
@@ -59,6 +60,7 @@ body {
     height: 110px;
     font-size: $nav-text;
     margin: auto;
+    font-family: $fontfamily;
 
     #logoimg {
         width: 217px;
@@ -229,6 +231,7 @@ body {
                     width: 148px;
                     color: $title-textcolor;
                     font-size: $subtitle;
+                    font-family: $fontfamily;
                     margin-bottom: 75px;
                     // line-height: 70px;
                 }
@@ -245,9 +248,10 @@ body {
                     text-align: justify;
                     // padding: 30px;
                     font-size: $text;
+                    font-family: $fontfamily;
                     color: $textcolor;
                     line-height: $text;
-                    
+
                 }
 
                 .context_article.active {
@@ -263,6 +267,7 @@ body {
             .title {
                 p {
                     font-size: $title-text;
+                    font-family: $fontfamily;
                     color: $title-textcolor;
                     line-height: 70px;
                 }
@@ -293,7 +298,7 @@ body {
 
                 p {
                     margin: 0;
-                   
+
                 }
             }
 
@@ -320,7 +325,7 @@ body {
     height: 1080px;
     position: relative;
 
-   
+
 
     .swiper-container {
         padding: 135px 0;
@@ -328,62 +333,64 @@ body {
         height: 100%;
 
         .swiper-pagination {
-            margin: 30px;
+            margin: 30px 0;
         }
-    }
 
-    .swiper-slide {
-        //全部要除以1.5
-        width: 945px;
-        // max-width:1050px;
-        height: 466px;
-        border: 1px solid black;
-        background: rgb(253, 148, 148);
-        display: flex;
-        justify-content: center;
-        
-        align-items: center;
-        width: 60%;
 
-        .img {
-            width: 300px;
+        .swiper-slide {
+            //全部要除以1.5
+            width: 945px;
+            // max-width:1050px;
             height: 466px;
-            order:-1;
-            img{
-                height:100%;
-                overflow: hidden;
-            }
-        }
+            border: 1px solid black;
+            background: rgb(253, 148, 148);
+            display: flex;
+            justify-content: center;
 
-        .text {
-            width: 400px ;
-            height: 100%;
-            padding: 63px 38px;
-            background-color: $backgroundcolor;
-            text-align: left;
-            // font-size: 18px;
-            font-family: 'Noto Sans TC', sans-serif;
+            align-items: center;
+            width: 60%;
 
-            .title {
-                margin-bottom: 29px;
-                font-size: 42px;
-                
-                color: $title-textcolor;
-                line-height: 42px;
+            .img {
+                width: 300px;
+                height: 466px;
+                order: -1;
+
+                img {
+                    height: 100%;
+                    overflow: hidden;
+                }
             }
 
-            .subtitle {
-                margin-bottom: 17px;
-                font-size: 29px;
-                color: $title-textcolor;
-                line-height: 29px;
-            }
+            .text {
+                width: 400px;
+                height: 100%;
+                padding: 63px 38px;
+                background-color: $backgroundcolor;
+                text-align: left;
+                // font-size: 18px;
+                font-family: $fontfamily;
 
-            .context {
-                font-size: 25px;
-                text-align: justify;
-                color:$textcolor;
-                line-height: 25px;
+                .title {
+                    margin-bottom: 29px;
+                    font-size: 42px;
+
+                    color: $title-textcolor;
+                    line-height: 42px;
+                }
+
+                .subtitle {
+                    margin-bottom: 17px;
+                    font-size: 29px;
+                    color: $title-textcolor;
+                    line-height: 29px;
+                }
+
+                .context {
+                    font-size: 25px;
+                    text-align: justify;
+                    color: $textcolor;
+                    line-height: 25px;
+                }
             }
         }
     }
@@ -402,37 +409,7 @@ body {
         z-index: 2;
     }
 
-    // .active{
-    //     transform: scale(1.5);
-    // }
-   
 
-    @media (max-width:1200px) {
-        height: unset;
-
-        .swiper-slide {
-            // width: 50% !important;
-            height: unset !important;
-            flex-wrap: wrap;
-            margin-bottom:100px;
-        }
-
-        .img {
-            width: 100% !important;
-            // height: 466px;
-            order:-1;
-            img{
-                width:100%;
-                // height:100%;
-            }
-        }
-
-        .text {
-            width: 100% !important;
-            height: unset !important;
-            
-        }
-    }
     @media (max-width:1920px) {
 
         .swiper-slide {
@@ -440,6 +417,78 @@ body {
             height: 466px;
         }
     }
+
+    @media(max-width:1000px) {
+        .swiper-container {
+            padding: 135px 0;
+            width: 100%;
+            height: 80%;
+
+            .swiper-slide {
+                width: 100% !important;
+                height: unset !important;
+                // flex-wrap: wrap;
+                display: flex;
+                margin-bottom: 100px;
+
+                .img {
+                    width: 100%;
+                    height: unset !important;
+                    order: -1;
+
+                    img {
+                        height: 100% !important;
+                        overflow: hidden;
+                    }
+                }
+            }
+
+            .swiper-pagination {
+                margin: 30px 0;
+            }
+        }
+
+
+        .swiper-slide-active {
+
+            transform: scale(1);
+            z-index: 2;
+        }
+
+
+
+    }
+
+    @media (max-width:1200px) {
+        height: unset;
+
+        .swiper-slide {
+            // width: 100% !important;
+            height: unset !important;
+            flex-wrap: wrap;
+            margin-bottom: 100px;
+
+            .img {
+                width: 100% !important;
+                // height: 466px;
+                order: -1;
+
+                img {
+                    width: 100%;
+                    // height:100%;
+                }
+            }
+
+            .text {
+                width: 100% !important;
+                height: unset !important;
+
+            }
+        }
+
+
+    }
+
 }
 
 
@@ -459,14 +508,18 @@ body {
     .text {
         .title {
             font-size: $title-text;
+            color: $title-textcolor;
+            font-family: $fontfamily;
             margin-bottom: 60px;
             line-height: $title-text;
         }
 
-        p {
+        .context {
             font-size: $text;
+            color: $textcolor;
+            font-family: $fontfamily;
             margin-bottom: 85px;
-            line-height:$text;
+            line-height: $text;
         }
     }
 
@@ -561,7 +614,7 @@ body {
     .swiper-slide {
         text-align: center;
         font-size: 18px;
-
+        font-family: $fontfamily;
         /* Center slide text vertically */
         display: flex;
         justify-content: center;
@@ -627,6 +680,7 @@ footer {
             display: flex;
             justify-content: flex-end;
             font-size: $nav-text;
+            font-family: $fontfamily;
             color: $title-textcolor;
             text-align: center;
             width: 100%;

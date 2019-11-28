@@ -17,31 +17,13 @@ var swiper_news = new Swiper('#news_swiper', {
   },
 });
 
-$(document).ready(function () {
-  $(window).resize(function () {
-    var ww = $(window).width()
-    if (ww > 1200) {
-      swiper_news.params.slidesPerView = 3;
-    }
-    if (ww < 1200) {
-      swiper_news.params.slidesPerView = 1;
-    }
-    // swiper_news.reInit()
-  });
-  // $(window).trigger('resize')
-});
+
 
 var swiper_protect = new Swiper('.protect_swiper', {
   //不能用id查找 事件裡的swiper-container太多 用另一個class抓取
   effect: 'flip',
   grabCursor: true,
-  // pagination: {
-  //   el: '.swiper-pagination',
-  // },
-  // // navigation: {
-  // //   nextEl: '.swiper-button-next',
-  // //   prevEl: '.swiper-button-prev',
-  // // },
+  
 });
 
 var swiper = new Swiper('.danger_swiper', {
@@ -53,4 +35,18 @@ var swiper = new Swiper('.danger_swiper', {
       el: '.swiper-pagination',
       clickable: true,
   },
+});
+$(document).ready(function () {
+  $(window).resize(function () {
+    var ww = $(window).width()
+    if (ww > 1200) {
+      swiper_news.params.slidesPerView = 3;
+    }
+    if (ww < 1200) {
+      swiper_news.params.slidesPerView = 1;
+    }
+    
+    // swiper_news.reInit()
+  });
+  // $(window).trigger('resize')
 });
