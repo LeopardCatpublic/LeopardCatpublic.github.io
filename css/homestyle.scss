@@ -280,9 +280,7 @@ body {
     height: 1080px;
     position: relative;
 
-    @media (max-width:1200px) {
-        height: unset;
-    }
+
 
     .container {
         margin: auto;
@@ -322,50 +320,43 @@ body {
     height: 1080px;
     position: relative;
 
-    @media (max-width:1920px) {
-
-        .swiper-slide {
-            width: 700px !important;
-            height: 346px;
-        }
-    }
-
-    @media (max-width:1400px) {
-        height: unset;
-
-        .swiper-slide {
-            width: 50% !important;
-
-        }
-    }
+   
 
     .swiper-container {
         padding: 135px 0;
         width: 100%;
         height: 100%;
 
-        .swiper-pagination {
-            margin: 10px;
-        }
+        // .swiper-pagination {
+        //     margin: 10px;
+        // }
     }
 
     .swiper-slide {
         //全部要除以1.5
         width: 945px;
+        // max-width:1050px;
         height: 466px;
         border: 1px solid black;
         background: rgb(253, 148, 148);
         display: flex;
         justify-content: center;
+        
         align-items: center;
         width: 60%;
 
         .img {
-            width: 450px;
+            width: 300px;
+            height: 466px;
+            order:-1;
+            img{
+                height:100%;
+                overflow: hidden;
+            }
         }
 
         .text {
-            width: 600px;
+            width: 400px ;
             height: 100%;
             padding: 63px 38px;
             background-color: $backgroundcolor;
@@ -414,6 +405,41 @@ body {
     // .active{
     //     transform: scale(1.5);
     // }
+   
+
+    @media (max-width:1200px) {
+        height: unset;
+
+        .swiper-slide {
+            // width: 50% !important;
+            height: unset !important;
+            flex-wrap: wrap;
+            margin-bottom:100px;
+        }
+
+        .img {
+            width: 100% !important;
+            // height: 466px;
+            order:-1;
+            img{
+                width:100%;
+                height:unset;
+            }
+        }
+
+        .text {
+            width: 100% !important;
+            height: unset !important;
+            
+        }
+    }
+    @media (max-width:1920px) {
+
+        .swiper-slide {
+            width: 700px !important;
+            height: 466px;
+        }
+    }
 }
 
 
