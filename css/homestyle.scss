@@ -245,6 +245,7 @@ body {
                     // padding: 30px;
                     font-size: $text;
                     color: $textcolor;
+                    line-height: $text;
                     
                 }
 
@@ -372,19 +373,23 @@ body {
             .title {
                 margin-bottom: 29px;
                 font-size: 42px;
+                
                 color: $title-textcolor;
+                line-height: 42px;
             }
 
             .subtitle {
                 margin-bottom: 17px;
                 font-size: 29px;
                 color: $title-textcolor;
+                line-height: 29px;
             }
 
             .context {
                 font-size: 25px;
                 text-align: justify;
                 color:$textcolor;
+                line-height: 25px;
             }
         }
     }

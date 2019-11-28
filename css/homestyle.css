@@ -198,6 +198,7 @@ body {
   text-align: justify;
   font-size: 38px;
   color: #828282;
+  line-height: 38px;
 }
 
 .section2 .container .tab .context .context_article.active {
@@ -318,18 +319,21 @@ body {
   margin-bottom: 29px;
   font-size: 42px;
   color: #4e4e4e;
+  line-height: 42px;
 }
 
 .section4 .swiper-slide .text .subtitle {
   margin-bottom: 17px;
   font-size: 29px;
   color: #4e4e4e;
+  line-height: 29px;
 }
 
 .section4 .swiper-slide .text .context {
   font-size: 25px;
   text-align: justify;
   color: #828282;
+  line-height: 25px;
 }
 
 .section4 .swiper-slide:nth-child(2n) {
