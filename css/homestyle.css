@@ -260,6 +260,10 @@ body {
   height: 100%;
 }
 
+.section4 .swiper-container .swiper-pagination {
+  margin: 30px;
+}
+
 .section4 .swiper-slide {
   width: 945px;
   height: 466px;
