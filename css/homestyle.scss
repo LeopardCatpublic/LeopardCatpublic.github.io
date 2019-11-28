@@ -229,6 +229,7 @@ body {
                     width: 148px;
                     color: $title-textcolor;
                     font-size: $subtitle;
+                    margin-bottom: 75px;
                 }
 
                 .tab_btn.active {
@@ -244,6 +245,7 @@ body {
                     // padding: 30px;
                     font-size: $text;
                     color: $textcolor;
+                    
                 }
 
                 .context_article.active {
@@ -344,11 +346,11 @@ body {
     }
 
     .swiper-slide {
+        //全部要除以1.5
         width: 945px;
         height: 466px;
         border: 1px solid black;
         background: rgb(253, 148, 148);
-        /* Center slide text vertically */
         display: flex;
         justify-content: center;
         align-items: center;

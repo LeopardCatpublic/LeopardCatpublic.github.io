@@ -185,6 +185,7 @@ body {
   width: 148px;
   color: #4e4e4e;
   font-size: 44px;
+  margin-bottom: 75px;
 }
 
 .section2 .container .tab .tab_btn_content .tab_btn.active {
@@ -288,7 +289,6 @@ body {
   height: 466px;
   border: 1px solid black;
   background: #fd9494;
-  /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
