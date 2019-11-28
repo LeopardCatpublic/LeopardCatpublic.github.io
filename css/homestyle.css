@@ -287,8 +287,6 @@ body {
   width: 945px;
   height: 466px;
   border: 1px solid black;
-  text-align: center;
-  font-size: 18px;
   background: #fd9494;
   /* Center slide text vertically */
   display: -webkit-box;
@@ -301,6 +299,37 @@ body {
       -ms-flex-align: center;
           align-items: center;
   width: 60%;
+}
+
+.section4 .swiper-slide .img {
+  width: 450px;
+}
+
+.section4 .swiper-slide .text {
+  width: 600px;
+  height: 100%;
+  padding: 63px 38px;
+  background-color: #ededed;
+  text-align: left;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+.section4 .swiper-slide .text .title {
+  margin-bottom: 29px;
+  font-size: 42px;
+  color: #4e4e4e;
+}
+
+.section4 .swiper-slide .text .subtitle {
+  margin-bottom: 17px;
+  font-size: 29px;
+  color: #4e4e4e;
+}
+
+.section4 .swiper-slide .text .context {
+  font-size: 25px;
+  text-align: justify;
+  color: #828282;
 }
 
 .section4 .swiper-slide:nth-child(2n) {
