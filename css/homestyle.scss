@@ -65,19 +65,31 @@ body {
     }
 
     .container_fluid {
-        display: flex;
-        justify-content: space-between;
+       
         width: 100%;
         margin: 0 170px;
     }
 
+    @media(max-width:991px) {
+        .container_fluid {
+            margin: 0;
+        }
+        .navbar-brand {
+            color: $title-textcolor;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%,-50%) !important;
+            margin:0;
+            
+        }
+    }
+
     .navbar-brand {
         color: $title-textcolor;
-
-        &:hover,
-        &:focus {
-            color: $hovercolor;
-        }
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        //    float: left;
     }
 
 
@@ -154,6 +166,19 @@ body {
     .navbar-form {
         background-color: $nav-backgroundcolor;
         border-color: $title-textcolor;
+
+    }
+
+    // .collapse {
+    //     display: flex;
+    //     justify-content: flex-end;
+    // }
+
+    @media(max-width:992px) {
+        // .show {
+        //     display: flex;
+        //     justify-content: flex-start !important;
+        // }
     }
 
     .navbar-link {
@@ -290,9 +315,9 @@ body {
     height: 1080px;
     position: relative;
     @media (max-width:1920px) {
-        height: unset;
+        
         .swiper-slide {
-            width: 945px !important;
+            width: 700px !important;
             height: 466px;
         }
     }
@@ -307,6 +332,9 @@ body {
         padding: 135px 0;
         width: 100%;
         height: 100%;
+        .swiper-pagination{
+            margin:10px;
+        }
     }
 
     .swiper-slide {
@@ -315,7 +343,7 @@ body {
         border: 1px solid black;
         text-align: center;
         font-size: 18px;
-        background: rgb(110, 103, 103);
+        background: rgb(253, 148, 148);
         /* Center slide text vertically */
         display: flex;
         justify-content: center;
