@@ -325,8 +325,6 @@ body {
     height: 1080px;
     position: relative;
 
-
-
     .swiper-container {
         padding: 135px 0;
         width: 100%;
@@ -335,7 +333,6 @@ body {
         .swiper-pagination {
             margin: 30px 0;
         }
-
 
         .swiper-slide {
             //全部要除以1.5
@@ -346,15 +343,10 @@ body {
             background: rgb(253, 148, 148);
             display: flex;
             justify-content: center;
-
-            // align-items: center;
             width: 60%;
-
             .img {
                 width: 300px;
                 height: 466px;
-                order: -1;
-
                 img {
                     height: 100%;
                     overflow: hidden;
@@ -367,24 +359,19 @@ body {
                 padding: 63px 38px;
                 background-color: $backgroundcolor;
                 text-align: left;
-                // font-size: 18px;
                 font-family: $fontfamily;
-
                 .title {
                     margin-bottom: 29px;
                     font-size: 42px;
-
                     color: $title-textcolor;
                     line-height: 42px;
                 }
-
                 .subtitle {
                     margin-bottom: 17px;
                     font-size: 29px;
                     color: $title-textcolor;
                     line-height: 29px;
                 }
-
                 .context {
                     font-size: 25px;
                     text-align: justify;
@@ -409,9 +396,7 @@ body {
         z-index: 2;
     }
 
-
     @media (max-width:1920px) {
-
         .swiper-slide {
             width: 700px !important;
             height: 466px;
@@ -419,23 +404,20 @@ body {
     }
 
     @media(max-width:1000px) {
-        // height:unset !important;
         .swiper-container {
-            padding:  0;
+            padding: 0;
             width: 100%;
             height: 100%;
 
             .swiper-slide {
                 width: 100% !important;
                 height: unset !important;
-                // flex-wrap: wrap;
                 display: flex;
                 margin-bottom: 100px;
 
                 .img {
                     width: 100%;
                     height: unset !important;
-                    order: -1;
 
                     img {
                         height: 100% !important;
@@ -449,47 +431,33 @@ body {
             }
         }
 
-
         .swiper-slide-active {
-
             transform: scale(1);
-            z-index: 2;
         }
-
-
-
     }
 
     @media (max-width:1200px) {
         height: unset;
 
         .swiper-slide {
-            // width: 100% !important;
             height: unset !important;
             flex-wrap: wrap;
             margin-bottom: 100px;
 
             .img {
                 width: 100% !important;
-                // height: 466px;
-                order: -1;
 
                 img {
                     width: 100%;
-                    // height:100%;
                 }
             }
 
             .text {
                 width: 100% !important;
                 height: unset !important;
-
             }
         }
-
-
     }
-
 }
 
 
