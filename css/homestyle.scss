@@ -382,9 +382,7 @@ body {
     // height: 1080px;
     position: relative;
 
-    @media (max-width:1200px) {
-        height: unset;
-    }
+   
 
     .text {
         .title {
@@ -417,7 +415,7 @@ body {
     }
 
     .swiper-container {
-        width: 320px;
+        width: 400px;
         padding: 0px;
         margin: 10px 0px;
     }
@@ -426,7 +424,22 @@ body {
         background-position: center;
         background-size: cover;
         border-radius: 50%;
-        height: 320px;
+        height: 400px;
+    }
+    @media (max-width:1200px) {
+        height: unset;
+        .swiper-container {
+            width: 320px;
+            padding: 0px;
+            margin: 10px 0px;
+        }
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            border-radius: 50%;
+            height: 320px;
+        }
+    
     }
 
 }

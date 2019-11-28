@@ -326,12 +326,6 @@ body {
   position: relative;
 }
 
-@media (max-width: 1200px) {
-  .section5 {
-    height: unset;
-  }
-}
-
 .section5 .text .title {
   font-size: 64px;
   margin-bottom: 60px;
@@ -360,7 +354,7 @@ body {
 }
 
 .section5 .swiper-container {
-  width: 320px;
+  width: 400px;
   padding: 0px;
   margin: 10px 0px;
 }
@@ -369,7 +363,24 @@ body {
   background-position: center;
   background-size: cover;
   border-radius: 50%;
-  height: 320px;
+  height: 400px;
+}
+
+@media (max-width: 1200px) {
+  .section5 {
+    height: unset;
+  }
+  .section5 .swiper-container {
+    width: 320px;
+    padding: 0px;
+    margin: 10px 0px;
+  }
+  .section5 .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    height: 320px;
+  }
 }
 
 .section6 {
