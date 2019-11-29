@@ -5,8 +5,11 @@ $title-text:64px;
 $subtitle:44px;
 $text:38px;
 $nav-text:24px;
+$news_title-text:32px;
+$news-text:22px;
 $nav-backgroundcolor:#bdc0ba;
 $backgroundcolor:#ededed;
+$whitebackground:#ffffff;
 $fontfamily: 'Noto Sans TC',
 sans-serif;
 
@@ -344,9 +347,11 @@ body {
             display: flex;
             justify-content: center;
             width: 60%;
+
             .img {
                 width: 300px;
                 height: 466px;
+
                 img {
                     height: 100%;
                     overflow: hidden;
@@ -360,18 +365,21 @@ body {
                 background-color: $backgroundcolor;
                 text-align: left;
                 font-family: $fontfamily;
+
                 .title {
                     margin-bottom: 29px;
                     font-size: 42px;
                     color: $title-textcolor;
                     line-height: 42px;
                 }
+
                 .subtitle {
                     margin-bottom: 17px;
                     font-size: 29px;
                     color: $title-textcolor;
                     line-height: 29px;
                 }
+
                 .context {
                     font-size: 25px;
                     text-align: justify;
@@ -466,7 +474,7 @@ body {
 .section5 {
     padding-top: 180px; //nav110+padding70
     padding-bottom: 66px;
-    background-color: rgb(209, 209, 209);
+    background-color: $whitebackground;
     text-align: center;
     width: 100vw;
     // height: 1080px;
@@ -497,10 +505,6 @@ body {
         padding: 0 70px;
         width: unset;
     }
-
-    // .col-xl-3 {
-    //     // width: 320px;
-    // }
 
     .box1 {
         // width: 400px;
@@ -546,8 +550,8 @@ body {
 .section6 {
     padding-top: 130px;
     padding-bottom: 60px;
-    background-color: rgb(121, 121, 121);
-    text-align: center;
+    background-color: $backgroundcolor;
+    // text-align: center;
     width: 100vw;
     height: 1080px;
     position: relative;
@@ -557,7 +561,12 @@ body {
 
         .content {
             height: unset !important;
-            margin-bottom: 100px;
+
+            // margin-bottom: 100px;
+            // .text {
+            //     // min-height: 500px;
+            //     //文字框最小大小
+            // }
         }
     }
 
@@ -566,57 +575,99 @@ body {
 
         .content {
             height: 850px;
+            width: 100% !important;
         }
     }
 
 
     .swiper-container {
-        // width: 70%;
         margin: 0px 20px;
     }
 
     .swiper-wrapper {
-
         margin: 20px 0;
     }
 
     .swiper-slide {
-        text-align: center;
+        // text-align: center;
         font-size: 18px;
         font-family: $fontfamily;
-        /* Center slide text vertically */
         display: flex;
         justify-content: center;
         align-items: center;
+        border: 1px solid black;
 
         .content {
             width: 560px;
-            // height: 850px;
+            height:unset;
             padding: 30px;
-            background: #fff;
+            background: $whitebackground;
         }
 
         .img {
             width: 100%;
             height: 50%;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+
+            }
         }
 
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+        .text {
+           
+            .title {
+                margin:15px 0;
+                 min-height: 64px;
+                font-size: $news_title-text;
+                color: $title-textcolor;
+                line-height: $news_title-text;
+                
+            }
 
+            .date {
+                text-align: right;
+                margin:0;
+            }
+
+            .context {
+                min-height: 270px;
+                overflow: hidden;
+            }
+
+            .ellipsis_title {
+                display: -webkit-box;
+                -webkit-line-clamp: 2; //行數
+                -webkit-box-orient: vertical;
+                white-space: normal;
+                overflow: hidden;
+            }
+            .ellipsis {
+                display: -webkit-box;
+                -webkit-line-clamp: 10; //行數
+                -webkit-box-orient: vertical;
+                white-space: normal;
+            }
         }
+
+    }
+
+    .swiper-button-prev {
+        color: black;
+        left: 0px;
     }
 
     .swiper-button-next {
         color: black;
-
+        right: 0px;
     }
 }
 
 
 .section7 {
+    //未完成
     padding-top: 110px;
     background-color: rgb(209, 209, 209);
     text-align: center;

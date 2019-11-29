@@ -399,7 +399,7 @@ body {
 .section5 {
   padding-top: 180px;
   padding-bottom: 66px;
-  background-color: #d1d1d1;
+  background-color: #ffffff;
   text-align: center;
   width: 100vw;
   position: relative;
@@ -471,8 +471,7 @@ body {
 .section6 {
   padding-top: 130px;
   padding-bottom: 60px;
-  background-color: #797979;
-  text-align: center;
+  background-color: #ededed;
   width: 100vw;
   height: 1080px;
   position: relative;
@@ -484,7 +483,6 @@ body {
   }
   .section6 .content {
     height: unset !important;
-    margin-bottom: 100px;
   }
 }
 
@@ -494,6 +492,7 @@ body {
   }
   .section6 .content {
     height: 850px;
+    width: 100% !important;
   }
 }
 
@@ -506,10 +505,8 @@ body {
 }
 
 .section6 .swiper-slide {
-  text-align: center;
   font-size: 18px;
   font-family: "Noto Sans TC", sans-serif;
-  /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -519,12 +516,14 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border: 1px solid black;
 }
 
 .section6 .swiper-slide .content {
   width: 560px;
+  height: unset;
   padding: 30px;
-  background: #fff;
+  background: #ffffff;
 }
 
 .section6 .swiper-slide .img {
@@ -532,15 +531,54 @@ body {
   height: 50%;
 }
 
-.section6 .swiper-slide img {
+.section6 .swiper-slide .img img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
+.section6 .swiper-slide .text .title {
+  margin: 15px 0;
+  min-height: 64px;
+  font-size: 32px;
+  color: #4e4e4e;
+  line-height: 32px;
+}
+
+.section6 .swiper-slide .text .date {
+  text-align: right;
+  margin: 0;
+}
+
+.section6 .swiper-slide .text .context {
+  min-height: 270px;
+  overflow: hidden;
+}
+
+.section6 .swiper-slide .text .ellipsis_title {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+  overflow: hidden;
+}
+
+.section6 .swiper-slide .text .ellipsis {
+  display: -webkit-box;
+  -webkit-line-clamp: 10;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+}
+
+.section6 .swiper-button-prev {
+  color: black;
+  left: 0px;
+}
+
 .section6 .swiper-button-next {
   color: black;
+  right: 0px;
 }
 
 .section7 {
