@@ -91,14 +91,13 @@ body {
   color: #ffffff;
 }
 
-.navbar .navbar-nav {
-  padding: 10px;
-}
-
 .navbar .navbar-nav .nav-link {
   color: #4e4e4e;
   border-radius: .25rem;
   margin: 0 0.25em;
+  width: 215px;
+  line-height: 90px;
+  text-align: center;
 }
 
 .navbar .navbar-nav .nav-link:not(.disabled):hover, .navbar .navbar-nav .nav-link:not(.disabled):focus {
