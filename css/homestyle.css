@@ -102,7 +102,9 @@ body {
 }
 
 .navbar .navbar-nav .nav-link:not(.disabled):hover, .navbar .navbar-nav .nav-link:not(.disabled):focus {
-  color: #ffffff;
+  background-image: url("/img/navhover.png");
+  background-position: center;
+  background-size: cover;
 }
 
 .navbar .navbar-nav .dropdown-menu {
@@ -142,10 +144,6 @@ body {
 
 .navbar .navbar-link {
   color: #4e4e4e;
-}
-
-.navbar .navbar-link:hover {
-  color: #ffffff;
 }
 
 .section2 {
