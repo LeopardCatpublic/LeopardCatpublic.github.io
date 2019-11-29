@@ -448,17 +448,49 @@ body {
   padding-bottom: 66px;
 }
 
-.section5 .swiper-container {
+.section5 .box1 .swiper-container {
   width: 400px;
   padding: 0px;
   margin: 10px 0px;
 }
 
-.section5 .swiper-slide {
+.section5 .box1 .swiper-container .swiper-slide {
   background-position: center;
   background-size: cover;
   border-radius: 50%;
   height: 400px;
+}
+
+.section5 .box1 .swiper-container .swiper-slide .button {
+  background-color: #bdc0ba;
+  padding: 10px 50px;
+  border-radius: 50px;
+  color: #ffffff;
+  font-size: 26px;
+  line-height: 26px;
+  white-space: nowrap;
+  font-family: "Noto Sans TC", sans-serif;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.section5 .box1 .swiper-container .swiper-slide .button2 {
+  background-color: #bdc0ba;
+  padding: 10px 24px;
+  border-radius: 50px;
+  color: #ffffff;
+  font-size: 26px;
+  line-height: 26px;
+  white-space: nowrap;
+  font-family: "Noto Sans TC", sans-serif;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 @media (max-width: 1200px) {
