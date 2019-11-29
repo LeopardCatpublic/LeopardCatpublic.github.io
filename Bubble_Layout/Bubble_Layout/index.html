@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        .particles {
+            margin-left: -200px;
+            margin-top: -175px;
+        }
+
+        .desktop .particles {
+            width: 2450px;
+            height: 1600px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="js-curtain" class="curtain">
+        <div class="curtain__progress-text">loading..</div>
+        <div id="js-progress-gradient" class="curtain__progress-text-gradient"></div>
+        <div id="js-progress" class="curtain__progress"></div>
+    </div>
+    <div id="js-close-btn" class="close">
+        <div id="js-close-btn-inner" class="close__inner"></div>
+    </div>
+    <div id="js-content" class="content">
+        <div id="js-dust-1" class="dust dust--1 sprite">
+        </div>
+        <div id="js-dust-2" class="dust dust--2 sprite">
+        </div>
+        <div id="js-dust-3" class="dust dust--3 sprite">
+        </div>
+        <div id="js-content-inner" class="content__inner">
+            <div class="project">
+                <div class="project__img">
+                    <img src="./origin-img/1.jpg" id="cat-image" class="image"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="js-badge" class="badge"></div>
+    <div id="js-wrapper" class="wrapper">
+        <div id="scroller" class="particles">
+            <div class="blob-circle-wrap">
+                <div id="js-blob-circle" class="blob-circle sprite">
+
+                </div>
+            </div>
+
+            <!-- <div id="js-particle-1" data-left="175" data-top="0" style="left: 175px; top: 0px" class="particle">
+                <div style="background: #FC2D79" class="particle__inner"></div>
+            </div>
+            <div id="js-particle-2" data-left="350" data-top="0" style="left: 350px; top: 0px" class="particle">
+                <div style="background: #FC2D79" class="particle__inner"></div>
+            </div>
+            <div id="js-particle-3" data-left="525" data-top="0" style="left: 525px; top: 0px" class="particle">
+                <div style="background: #FCB635" class="particle__inner"></div>
+            </div> -->
+
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/1.1.26/howler.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/mojs/0.119.0/mo.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/hammerjs/2.0.4/hammer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.1/iscroll-probe.min.js"></script>
+    <script>
+        var scroller = document.querySelector('#scroller');
+        var row = 10;
+        var col = 16;
+        var particle_ary_element_string = '';
+        for (let i = 0; i < row; i++) {
+            for (let j = 0; j < col; j++) {
+                var random_number = Math.floor((Math.random() * 19) + 1);
+                particle_ary_element_string += ` 
+                    <div data-left="${(j + 1) * 175}" data-top="${(i + 1) * 175}" style="left: ${(j + 1) * 175}px; top: ${(i + 1) * 175}px" class="particle">
+                        <div style="background-image: url('./circle-img/${random_number}.png')" data-cat="${random_number}"  class="particle__inner"></div>
+                    </div>`;
+            }
+        }
+        scroller.innerHTML += particle_ary_element_string;
+    </script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
