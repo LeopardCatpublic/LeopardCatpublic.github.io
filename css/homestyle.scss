@@ -108,14 +108,11 @@ body {
             color: $title-textcolor;
             border-radius: .25rem;
             margin: 0 0.25em;
-            width:215px;
-            line-height: 90px;
-            text-align: center;
             &:not(.disabled) {
                 &:hover,
                 &:focus {
-                    color: $hovercolor;
-                    background-image: url("/img/navhover.png");
+                    color: black;
+                    background-image: url("/img/navhover2.png");
                     background-position: center;
                     background-size: cover;
                 }
@@ -123,7 +120,7 @@ body {
         }
 
         @if ($dropDown) {
-            // padding: 10px;
+            padding: 10px;
             .dropdown-menu {
                 background-color: $backgroundcolor;
                 border-color: $bordercolor;
