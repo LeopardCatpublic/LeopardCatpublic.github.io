@@ -120,7 +120,7 @@ body {
                 &:hover,
                 &:focus {
                     color: black;
-                    background-image: url("/img/navhover2.png");
+                    background-image: url("../img/navhover.png");
                     background-position: center;
                     background-size: cover;
                 }
@@ -181,7 +181,7 @@ body {
     width: 100vw;
     height: 1080px;
     background-color: $backgroundcolor;
-    background-image: url("/img/工作區域\ 16.png");
+    background-image: url("../img/introbackground.png");
     background-repeat: no-repeat;
     background-position: left;
     background-size: cover;
