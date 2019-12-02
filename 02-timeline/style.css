@@ -10,7 +10,7 @@
 .timeline {
   width: 100%;
   background-color: #fff;
-  box-shadow: 0 5px 25px 5px rgba(0, 0, 0, 0.2);
+  
 }
 .timeline .swiper-container {
   height: 100vh;
@@ -24,11 +24,16 @@
   width: 100%;
   height: 100vh;
   position: relative;
-  color: #fff;
+
   overflow: hidden;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+.swiper-bg{
+  width: 100%;
+  height: 100%;
 }
 
 /* 大小不同更改 */
@@ -40,15 +45,22 @@
   bottom: -10%;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
+ 
   }
 .timeline .swiper-slide-content {
   position: absolute;
   text-align: center;
   width: 100%;
-  max-width: 400px;
+  max-width: 450px;
+  height: 550px;
+  padding: 20px;
+  background-image: url("./img/timebg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   right: 50%;
   top:10%; 
+ 
   /* 字的位置大小 */
   -webkit-transform: translate(50%, 0);
           transform: translate(50%, 0);
@@ -57,6 +69,7 @@
 }
 
 .timeline .swiper-slide .timeline-title {
+  color:#4b4b4b;
   font-weight: 600;
   font-size: 50px;
   margin: 0 0 20px 0;
@@ -66,6 +79,7 @@
   transition: .2s ease .5s;
 }
 .timeline .swiper-slide .timeline-text {
+  color:#ffffff;
   line-height: 1.5;
   opacity: 0;
   -webkit-transform: translate3d(20px, 0, 0);
@@ -75,7 +89,7 @@
 
 .timeline .swiper-slide-active .timeline-title {
   opacity: 1;
-  -webkit-transform: translate3d(0, 0, 0);z
+  -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
   transition: .4s ease 1.7s;
 }
@@ -104,7 +118,7 @@
   top: 0;
   height: 100%;
   width: 5px;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgb(206, 206, 206);
 }
 /*側邊的字*/
 .timeline .swiper-pagination-bullet {
@@ -113,7 +127,7 @@
   text-align: center;
   opacity: 1;
   background: transparent;
-  color: #d4a024;
+  color:  rgb(125, 125, 125);
   margin: 20px 0 !important;
   position: relative;
 }
@@ -122,20 +136,21 @@
 .timeline .swiper-pagination-bullet::before {
   content: "";
   position: absolute;
-  top: 15px;
-  left: -32.5px;
-  width: 10px;
-  height: 10px;
-  border-radius: 100%;
-  background-color: #d4a024;
+  left: -42px;
+  width: 30px;
+  height: 30px;
+ background-image: url("./img/circle.png");
+ background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   -webkit-transform: scale(0);
-          transform: scale(0);
-         
+          transform: scale(0);         
   transition: .2s;
 }
 /*選到的顏色*/
 .timeline .swiper-pagination-bullet-active {
-  color: #db5e15;
+  color: rgb(100, 100, 100);
+
 }
 .timeline .swiper-pagination-bullet-active::before {
   -webkit-transform: scale(1.2);
@@ -144,7 +159,7 @@
 /* 箭頭大小位置 */
 .timeline .swiper-button-next,
 .timeline .swiper-button-prev {
-  background-size: 50px 50px;
+  background-size:100%;
   top: 10%;
   width: -100px;
   height: -100px;
@@ -154,22 +169,16 @@
 }
 .timeline .swiper-button-prev {
   top: 11%;
-  left: 8%;
-  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23d4a024'%2F%3E%3C%2Fsvg%3E");
+  left: 18%;
+  background-image: url("./img/circle.png");
 }
-.timeline .swiper-button-prev:hover {
-  -webkit-transform: translateX(-3px);
-          transform: translateX(-3px);
-}
+
 .timeline .swiper-button-next {
   top: 11%;
-  right: 8%;
-  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23d4a024'%2F%3E%3C%2Fsvg%3E");
+  right: 18%;
+  background-image: url("./img/circle.png");
 }
-.timeline .swiper-button-next:hover {
-  -webkit-transform: translateX(3px);
-          transform: translateX(3px);
-}
+
 
 
 @media screen and (min-width: 1200px) {
@@ -195,22 +204,13 @@
     top: 25%;
     left: auto;
     right: 17%;
-    -webkit-transform: rotate(90deg) translate(0, 10px);
-            transform: rotate(90deg) translate(0, 10px);
+    
   }
-  .timeline .swiper-button-prev:hover {
-    -webkit-transform: rotate(90deg) translate(-3px, 10px);
-            transform: rotate(90deg) translate(-3px, 10px);
-  }
+
   .timeline .swiper-button-next {
     top: auto;
     bottom: 25%;
     right: 17%;
-    -webkit-transform: rotate(90deg) translate(0, 10px);
-            transform: rotate(90deg) translate(0, 10px);
-  }
-  .timeline .swiper-button-next:hover {
-    -webkit-transform: rotate(90deg) translate(3px, 10px);
-            transform: rotate(90deg) translate(3px, 10px);
-  }
+ }
+ 
 }

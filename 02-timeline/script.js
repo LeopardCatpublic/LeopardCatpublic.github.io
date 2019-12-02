@@ -11,9 +11,9 @@ var timelineSwiper = new Swiper ('.timeline .swiper-container', {
   nextButton: '.swiper-button-next',
   prevButton: '.swiper-button-prev',
   // 尺寸
-  breakpoints: {
-    768: {
-      direction: 'horizontal',
-    }
-  }
+  // breakpoints: {
+  //   768: {
+  //     direction: 'horizontal',
+  //   }
+  // }
 });
