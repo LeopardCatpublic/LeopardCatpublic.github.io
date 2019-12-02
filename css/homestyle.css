@@ -51,6 +51,9 @@ body {
   .navbar .container_fluid {
     margin: 0;
   }
+  .navbar .nav-link:not(.disabled):hover, .navbar .nav-link:not(.disabled):focus {
+    background-image: none !important;
+  }
   .navbar .navbar-brand {
     color: #4e4e4e;
     position: absolute;
@@ -64,9 +67,6 @@ body {
 @media (max-width: 500px) {
   .navbar {
     height: 50px;
-  }
-  .navbar .nav-link:not(.disabled):hover, .navbar .nav-link:not(.disabled):focus {
-    background-image: none !important;
   }
   .navbar #logoimg {
     width: 100px;

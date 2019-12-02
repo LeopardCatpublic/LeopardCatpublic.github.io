@@ -70,7 +70,15 @@ body {
         .container_fluid {
             margin: 0;
         }
+        .nav-link {
+            &:not(.disabled) {
 
+                &:hover,
+                &:focus {
+                    background-image: none !important;
+                }
+            }
+        }
         .navbar-brand {
             color: $title-textcolor;
             position: absolute;
@@ -83,15 +91,7 @@ body {
     @media(max-width:500px) {
         height: 50px;
 
-        .nav-link {
-            &:not(.disabled) {
-
-                &:hover,
-                &:focus {
-                    background-image: none !important;
-                }
-            }
-        }
+       
 
         #logoimg {
             width: 100px;
