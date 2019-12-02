@@ -51,24 +51,20 @@ $(document).ready(function () {
   // $(window).trigger('resize')
 });
 
-// var galleryThumbs = new Swiper('.gallery-thumbs', {
-//   spaceBetween: 10,
-//   slidesPerView: 4,
-//   loop: true,
-//   freeMode: true,
-//   loopedSlides: 5, //looped slides should be the same
-//   watchSlidesVisibility: true,
-//   watchSlidesProgress: true,
-// });
-// var galleryTop = new Swiper('.gallery-top', {
-//   spaceBetween: 10,
-//   loop: true,
-//   loopedSlides: 5, //looped slides should be the same
-//   navigation: {
-//     nextEl: '.swiper-button-next',
-//     prevEl: '.swiper-button-prev',
-//   },
-//   thumbs: {
-//     swiper: galleryThumbs,
-//   },
-// });
+var gallery_swiper = new Swiper('.gallery_swiper', {
+  effect: 'coverflow',
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: 'auto',
+  loop:true,
+  coverflowEffect: {
+    rotate: 50,
+    stretch: 0,
+    depth: 100,
+    modifier: 1,
+    slideShadows : true,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+  },
+});
