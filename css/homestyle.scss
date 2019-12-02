@@ -45,21 +45,7 @@ body {
 }
 
 //nav滾動效果
-.home {
-    background-color: rgb(209, 209, 209);
-    text-align: center;
-    width: 100vw;
-    height: 1080px;
-    position: relative;
-    z-index: 3;
 
-    .banner1 {
-        background-color: rgb(129, 129, 129);
-        width: 150px;
-        margin: auto;
-        margin-top: 50px;
-    }
-}
 
 .navbar {
     background-color: $nav-backgroundcolor;

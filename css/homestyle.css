@@ -26,22 +26,6 @@ body {
   }
 }
 
-.home {
-  background-color: #d1d1d1;
-  text-align: center;
-  width: 100vw;
-  height: 1080px;
-  position: relative;
-  z-index: 3;
-}
-
-.home .banner1 {
-  background-color: #818181;
-  width: 150px;
-  margin: auto;
-  margin-top: 50px;
-}
-
 .navbar {
   background-color: #bdc0ba;
   position: -webkit-sticky;

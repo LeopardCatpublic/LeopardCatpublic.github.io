@@ -1,0 +1,120 @@
+body{
+   margin: 0;
+   padding: 0;
+   overflow-x: hidden;
+   /* overflow: hidden;  */
+  }
+
+.parallax_camera{
+  height: 100vh;
+   overflow: hidden; 
+  width: 100%;
+  /* height: 100%; */
+   background: url("../img/bg.png") no-repeat;
+   background-repeat:no-repeat;
+   background-size: contain;
+   /* transform: perspective(500px); */
+   position: relative;
+  }
+/* @media(max-width:1900px){
+  section{
+ height:unset !important
+  }
+} */
+img{
+width: 100%;
+}
+
+.parallax_space{
+position: relative;
+} */
+
+/* .parallax_space2{
+position: relative;
+}
+
+ /* <!-- LOGO位置 --> */
+.logo{
+position: absolute;
+z-index: 99;   
+}
+    
+.parallax_layer{
+position: absolute;
+}
+
+ /* <!-- 植物位置 --> */
+.parallax_layer.plant1{
+z-index: 9;
+}
+
+.parallax_layer.plant2{
+z-index: 8;
+}
+
+.parallax_layer.plant3{
+z-index: 0;
+}
+
+.parallax_layer.plant4{
+z-index: 6;
+}
+
+.parallax_layer.plant5{
+z-index: 5;
+}
+
+/* <!-- 後面山位置 --> */
+.parallax_layer.tree1{
+z-index: -1;
+}
+
+.parallax_layer.tree2{
+z-index: -2;
+}
+
+.parallax_layer.tree3{
+z-index: -3;
+}
+
+/* <!-- 石虎位置 --> */
+.parallax_layer.cat1{
+  z-index: 1;
+}
+  
+.parallax_layer.cat2{
+z-index: 1;
+}
+
+
+
+@media (max-width: 480px) {
+
+  section{
+  width: 100vw;  
+  height: 100vh !important;
+ 
+}
+   
+ .parallax_camera{
+  background-size: cover;
+ } 
+
+
+.parallax_layer.logo{
+  top:-20px;
+  transform: scale(0.75);
+}
+
+.parallax_layer.bird{
+opacity: 0;  
+}
+
+
+.parallax_space{
+opacity: 1;
+top:120px;
+transform: scale(2.75)
+}
+  
+} 
