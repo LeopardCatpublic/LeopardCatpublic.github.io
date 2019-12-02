@@ -20,7 +20,7 @@ body {
   width: 100px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .backtotop {
     display: none;
   }
@@ -76,7 +76,7 @@ body {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .navbar {
     height: 50px;
   }
@@ -195,7 +195,7 @@ body {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .introduce {
     height: 100vh;
   }
@@ -503,7 +503,7 @@ body {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .danger {
     height: 100vh;
   }
@@ -640,7 +640,7 @@ body {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .protect {
     padding-top: 50px;
   }
@@ -752,7 +752,7 @@ body {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .news {
     height: 100vh;
     padding-top: 50px !important;
@@ -936,7 +936,7 @@ footer {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   footer {
     height: 80px !important;
   }
