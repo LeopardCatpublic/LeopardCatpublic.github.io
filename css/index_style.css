@@ -19,12 +19,31 @@
     height:600px;
   }
 }
+@media(max-width:965px){
+  .home{
+    height:450px;
+  }
+ 
+}
+@media(max-width:865px){
+  .home{
+    height:450px;
+  }
+  
+}
 @media(max-width:765px){
   .home{
     height:450px;
   }
-  .parallax_camera {
-    height:100%;
+}
+@media(max-width:665px){
+  .home{
+    height:350px;
+  }
+}
+@media(max-width:565px){
+  .home{
+    height:300px;
   }
 }
 .parallax_camera {
@@ -133,4 +152,9 @@ position: relative;
     transform: scale(2.75)
   }
 
+  @media(max-width:320px){
+    .home{
+      height:100vh;
+    }
+  }
 } 
