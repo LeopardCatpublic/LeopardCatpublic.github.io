@@ -14,7 +14,8 @@ $lineheightin320:20px;
 $nav-backgroundcolor:#bdc0ba;
 $backgroundcolor:#ededed;
 $whitebackground:#ffffff;
-$fontfamily: 'Noto Sans TC',sans-serif;
+$fontfamily: 'Noto Sans TC',
+sans-serif;
 $bordercolor : #000000;
 $title-textcolor : #4e4e4e;
 $dropDown : true;
@@ -39,8 +40,9 @@ body {
     img {
         width: 100px;
     }
-    @media(max-width:500px){
-       display:none;
+
+    @media(max-width:500px) {
+        display: none;
     }
 }
 
@@ -82,16 +84,18 @@ body {
 
     @media(max-width:500px) {
         height: 50px;
+
         .nav-link {
-          
+
             &:not(.disabled) {
 
                 &:hover,
                 &:focus {
-                  background-image: none !important;
+                    background-image: none !important;
                 }
             }
         }
+
         #logoimg {
             width: 100px;
         }
@@ -135,7 +139,7 @@ body {
                     background-image: url("../img/navhover.png");
                     background-position: center;
                     background-size: cover;
-                  
+
                 }
             }
         }
@@ -224,7 +228,7 @@ body {
     }
 
     @media (max-width:500px) {
-height:100vh;
+        height: 100vh;
 
         .tab1 {
             margin: 10px !important;
@@ -250,7 +254,7 @@ height:100vh;
         .tab2 {
             .imgcontent {
                 width: 200px !important;
-                top: 60% !important;
+                top: 70% !important;
                 right: 50% !important;
 
                 .img {
@@ -416,6 +420,9 @@ height:100vh;
 .danger {
     padding-top: 110px;
     background-color: $backgroundcolor;
+    background-image: url("../img/dangerbackground.png");
+    background-size: cover;
+background-position: left;
     text-align: center;
     width: 100vw;
     height: 1080px;
@@ -575,6 +582,7 @@ height:100vh;
 
     @media(max-width:500px) {
         height: 100vh;
+
         .swiper-container {
 
             .swiper-slide {
@@ -752,19 +760,21 @@ height:100vh;
             border-radius: 50%;
             height: 200px !important;
             width: 200px;
+
             .button {
                 padding: 10px 30px !important;
                 font-size: 13px !important;
                 line-height: 13px !important;
-             
+
             }
+
             .button2 {
-               
+
                 padding: 10px 18px !important;
-              
+
                 font-size: 13px !important;
                 line-height: 13px !important;
-             
+
             }
         }
 
@@ -856,9 +866,10 @@ height:100vh;
     }
 
     @media (max-width:500px) {
-        height:100vh;
+        height: 100vh;
         padding-top: 50px !important;
         padding-bottom: 50px !important;
+
         .title {
             font-size: $titlein320;
             margin-bottom: 0px !important;
@@ -895,7 +906,7 @@ height:100vh;
                     min-height: 100px !important;
                     overflow: hidden;
                     font-size: $textin320 !important;
-                    margin:0 !important;
+                    margin: 0 !important;
                 }
 
                 .ellipsis_title {
@@ -917,7 +928,7 @@ height:100vh;
         }
 
         .swiper-button-prev {
-           display: none;
+            display: none;
         }
 
         .swiper-button-next {
@@ -1090,6 +1101,7 @@ footer {
 
     @media (max-width:500px) {
         height: 80px !important;
+
         p {
             font-size: $textin320 !important;
         }

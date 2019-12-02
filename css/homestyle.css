@@ -201,7 +201,7 @@ body {
   }
   .introduce .tab2 .imgcontent {
     width: 200px !important;
-    top: 60% !important;
+    top: 70% !important;
     right: 50% !important;
   }
   .introduce .tab2 .imgcontent .img {
@@ -336,6 +336,9 @@ body {
 .danger {
   padding-top: 110px;
   background-color: #ededed;
+  background-image: url("../img/dangerbackground.png");
+  background-size: cover;
+  background-position: left;
   text-align: center;
   width: 100vw;
   height: 1080px;
