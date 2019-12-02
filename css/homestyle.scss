@@ -46,9 +46,6 @@ body {
     }
 }
 
-//nav滾動效果
-
-
 .navbar {
     background-color: $nav-backgroundcolor;
     position: sticky;
@@ -57,7 +54,7 @@ body {
     font-size: $nav-text;
     margin: auto;
     font-family: $fontfamily;
-
+z-index: 20;
     #logoimg {
         width: 217px;
     }
@@ -78,7 +75,6 @@ body {
             left: 50%;
             transform: translate(-50%, -50%) !important;
             margin: 0;
-
         }
     }
 
@@ -86,7 +82,6 @@ body {
         height: 50px;
 
         .nav-link {
-
             &:not(.disabled) {
 
                 &:hover,
@@ -139,7 +134,6 @@ body {
                     background-image: url("../img/navhover.png");
                     background-position: center;
                     background-size: cover;
-
                 }
             }
         }
@@ -206,7 +200,6 @@ body {
     padding-bottom: 56px;
     position: relative;
 
-
     @media (max-width:1200px) {
         height: unset;
         padding-top: 0px;
@@ -223,8 +216,6 @@ body {
                 transform: translateX(50%) !important;
             }
         }
-
-
     }
 
     @media (max-width:500px) {
@@ -330,8 +321,6 @@ body {
                         border-top: none;
                     }
                 }
-
-
             }
 
             .tab2 {
@@ -370,12 +359,7 @@ body {
             }
         }
     }
-
-
-
-
 }
-
 
 .distributed {
     padding-top: 110px;
@@ -384,8 +368,6 @@ body {
     width: 100vw;
     height: 1080px;
     position: relative;
-
-
 
     .container {
         margin: auto;
@@ -416,13 +398,12 @@ body {
     }
 }
 
-
 .danger {
     padding-top: 110px;
     background-color: $backgroundcolor;
     background-image: url("../img/dangerbackground.png");
     background-size: cover;
-background-position: left;
+    background-position: left;
     text-align: center;
     width: 100vw;
     height: 1080px;
@@ -501,7 +482,6 @@ background-position: left;
     }
 
     .swiper-slide-active {
-
         transform: scale(1.5);
         z-index: 2;
     }
@@ -512,8 +492,6 @@ background-position: left;
             height: 466px;
         }
     }
-
-
 
     @media (max-width:1200px) {
         height: unset;
@@ -561,7 +539,6 @@ background-position: left;
                     img {
                         height: 100% !important;
                         overflow: hidden;
-
                     }
                 }
 
@@ -584,10 +561,8 @@ background-position: left;
         height: 100vh;
 
         .swiper-container {
-
             .swiper-slide {
                 margin-bottom: 100px;
-
 
                 .text {
                     background-color: unset;
@@ -599,20 +574,16 @@ background-position: left;
                     }
 
                     .subtitle {
-
                         font-size: $subtitlein320;
                         line-height: $subtitlein320;
                     }
 
                     .context {
                         font-size: $textin320;
-
-
                         line-height: $lineheightin320;
                     }
                 }
             }
-
         }
 
         .swiper-pagination {
@@ -624,9 +595,6 @@ background-position: left;
         }
     }
 }
-
-
-
 
 .protect {
     padding-top: 180px; //nav110+padding70
@@ -691,7 +659,6 @@ background-position: left;
                     position: absolute;
                     top: 80%;
                     left: 50%;
-
                     transform: translate(-50%, -50%);
                 }
 
@@ -707,10 +674,8 @@ background-position: left;
                     position: absolute;
                     top: 80%;
                     left: 50%;
-
                     transform: translate(-50%, -50%);
                 }
-
             }
         }
     }
@@ -731,7 +696,6 @@ background-position: left;
             border-radius: 50%;
             height: 320px !important;
         }
-
     }
 
     @media (max-width:500px) {
@@ -765,16 +729,12 @@ background-position: left;
                 padding: 10px 30px !important;
                 font-size: 13px !important;
                 line-height: 13px !important;
-
             }
 
             .button2 {
-
                 padding: 10px 18px !important;
-
                 font-size: 13px !important;
                 line-height: 13px !important;
-
             }
         }
 
@@ -783,7 +743,6 @@ background-position: left;
             padding: 0px;
             margin: 10px 0px;
         }
-
 
         .box1 {
             padding: 0;
@@ -823,14 +782,12 @@ background-position: left;
                     width: 100%;
                     height: unset !important;
                     object-fit: cover;
-
                 }
 
                 iframe {
                     width: 100%;
                     height: unset !important;
                     object-fit: cover;
-
                 }
             }
         }
@@ -851,18 +808,15 @@ background-position: left;
                     width: 100%;
                     height: 315px;
                     object-fit: cover;
-
                 }
 
                 iframe {
                     width: 100%;
                     height: 315px;
                     object-fit: cover;
-
                 }
             }
         }
-
     }
 
     @media (max-width:500px) {
@@ -892,9 +846,7 @@ background-position: left;
                     margin: 15px 0 0px 0;
                     min-height: unset !important;
                     font-size: $titlein320 !important;
-
                     line-height: $titlein320 !important;
-
                 }
 
                 .date {
@@ -924,7 +876,6 @@ background-position: left;
                     white-space: normal;
                 }
             }
-
         }
 
         .swiper-button-prev {
@@ -934,7 +885,6 @@ background-position: left;
         .swiper-button-next {
             display: none;
         }
-
     }
 
     .swiper-container {
@@ -974,7 +924,6 @@ background-position: left;
                 font-size: $news_title-text;
                 color: $title-textcolor;
                 line-height: $news_title-text;
-
             }
 
             .date {
@@ -1002,7 +951,6 @@ background-position: left;
                 white-space: normal;
             }
         }
-
     }
 
     .swiper-button-prev {
@@ -1015,7 +963,6 @@ background-position: left;
         right: 0px;
     }
 }
-
 
 .gallery {
     //未完成
