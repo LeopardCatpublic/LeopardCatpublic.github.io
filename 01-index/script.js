@@ -84,8 +84,8 @@ $(window).on('mousemove click', function(e) {
 
 var lMouseX = Math.max(-100, Math.min(100, $(window).width() / 2 - e.clientX));
 var lMouseY = Math.max(-100, Math.min(100, $(window).height() / 2 - e.clientY));
-lFollowX = (7 * lMouseX) / 100; // 100 : 12 = lMouxeX : lFollow
-lFollowY = (7 * lMouseY) / 100;
+lFollowX = (0 * lMouseX) / 100; // 100 : 12 = lMouxeX : lFollow
+lFollowY = (0 * lMouseY) / 100;
 
 });
 
