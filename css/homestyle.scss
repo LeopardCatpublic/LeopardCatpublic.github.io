@@ -862,8 +862,8 @@ height:100vh;
 
     @media (max-width:320px) {
         height:100vh;
-        padding-top: 30px !important;
-        padding-bottom: 30px !important;
+        padding-top: 50px !important;
+        padding-bottom: 50px !important;
         .title {
             font-size: $titlein320;
             margin-bottom: 0px !important;
@@ -922,13 +922,11 @@ height:100vh;
         }
 
         .swiper-button-prev {
-
-            opacity: 0.5;
-            left: 0px;
+           display: none;
         }
 
         .swiper-button-next {
-            opacity: 0.5;
+            display: none;
         }
 
     }

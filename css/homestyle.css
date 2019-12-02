@@ -755,8 +755,8 @@ body {
 @media (max-width: 320px) {
   .news {
     height: 100vh;
-    padding-top: 30px !important;
-    padding-bottom: 30px !important;
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
   }
   .news .title {
     font-size: 21px;
@@ -801,11 +801,10 @@ body {
     white-space: normal;
   }
   .news .swiper-button-prev {
-    opacity: 0.5;
-    left: 0px;
+    display: none;
   }
   .news .swiper-button-next {
-    opacity: 0.5;
+    display: none;
   }
 }
 
