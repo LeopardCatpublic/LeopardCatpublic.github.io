@@ -18,8 +18,8 @@ $fontfamily: 'Noto Sans TC',
 sans-serif;
 $bordercolor : #000000;
 $title-textcolor : #4e4e4e;
-$dropDown : true;
-
+$dropDown :true;
+$letter-spacing: 3px;
 html {
     margin: 0;
     overflow-x: hidden;
@@ -311,6 +311,7 @@ z-index: 20;
                         // padding: 30px;
                         font-size: $text;
                         font-family: $fontfamily;
+                        letter-spacing: $letter-spacing;
                         color: $textcolor;
                         line-height: $text;
 
@@ -448,6 +449,7 @@ z-index: 20;
                 background-color: $whitebackground;
                 text-align: left;
                 font-family: $fontfamily;
+                letter-spacing: $letter-spacing;
 
                 .title {
                     margin-bottom: 29px;
@@ -602,6 +604,7 @@ z-index: 20;
     background-color: $whitebackground;
     text-align: center;
     width: 100vw;
+    letter-spacing: $letter-spacing;
     // height: 1080px;
     position: relative;
 
@@ -700,11 +703,9 @@ z-index: 20;
 
     @media (max-width:500px) {
         padding-top: 50px;
-
         .text {
             .title {
                 font-size: $titlein320;
-
                 margin-bottom: 30px;
                 line-height: $titlein320;
             }
@@ -714,6 +715,7 @@ z-index: 20;
                 color: $textcolor;
                 font-family: $fontfamily;
                 margin-bottom: 25px;
+                padding:0 20px;
                 line-height: $lineheightin320;
             }
         }
@@ -765,6 +767,7 @@ z-index: 20;
         text-align: center;
         margin: auto;
         margin-bottom: 50px;
+        letter-spacing: $letter-spacing;
     }
 
     @media (max-width:1200px) {
@@ -885,6 +888,9 @@ z-index: 20;
         .swiper-button-next {
             display: none;
         }
+        .swiper-pagination{
+            display: block !important;
+        }
     }
 
     .swiper-container {
@@ -894,7 +900,9 @@ z-index: 20;
     .swiper-wrapper {
         margin: 20px 0;
     }
-
+.swiper-pagination{
+    display:none;
+}
     .swiper-slide {
         // text-align: center;
         font-size: 18px;
@@ -909,6 +917,7 @@ z-index: 20;
             height: unset;
             padding: 30px;
             background: $whitebackground;
+            letter-spacing: $letter-spacing;
         }
 
         .img {

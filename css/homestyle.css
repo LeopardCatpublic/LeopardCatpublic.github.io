@@ -264,6 +264,7 @@ body {
   text-align: justify;
   font-size: 38px;
   font-family: "Noto Sans TC", sans-serif;
+  letter-spacing: 3px;
   color: #828282;
   line-height: 38px;
 }
@@ -389,6 +390,7 @@ body {
   background-color: #ffffff;
   text-align: left;
   font-family: "Noto Sans TC", sans-serif;
+  letter-spacing: 3px;
 }
 
 .danger .swiper-container .swiper-slide .text .title {
@@ -532,6 +534,7 @@ body {
   background-color: #ffffff;
   text-align: center;
   width: 100vw;
+  letter-spacing: 3px;
   position: relative;
 }
 
@@ -645,6 +648,7 @@ body {
     color: #828282;
     font-family: "Noto Sans TC", sans-serif;
     margin-bottom: 25px;
+    padding: 0 20px;
     line-height: 20px;
   }
   .protect .swiper-slide {
@@ -689,6 +693,7 @@ body {
   text-align: center;
   margin: auto;
   margin-bottom: 50px;
+  letter-spacing: 3px;
 }
 
 @media (max-width: 1200px) {
@@ -797,6 +802,9 @@ body {
   .news .swiper-button-next {
     display: none;
   }
+  .news .swiper-pagination {
+    display: block !important;
+  }
 }
 
 .news .swiper-container {
@@ -805,6 +813,10 @@ body {
 
 .news .swiper-wrapper {
   margin: 20px 0;
+}
+
+.news .swiper-pagination {
+  display: none;
 }
 
 .news .swiper-slide {
@@ -827,6 +839,7 @@ body {
   height: unset;
   padding: 30px;
   background: #ffffff;
+  letter-spacing: 3px;
 }
 
 .news .swiper-slide .img {
