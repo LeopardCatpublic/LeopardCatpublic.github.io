@@ -20,6 +20,12 @@ body {
   width: 100px;
 }
 
+@media (max-width: 320px) {
+  .backtotop {
+    display: none;
+  }
+}
+
 .home {
   background-color: #d1d1d1;
   text-align: center;
@@ -190,6 +196,9 @@ body {
 }
 
 @media (max-width: 320px) {
+  .introduce {
+    height: 100vh;
+  }
   .introduce .tab1 {
     margin: 10px !important;
     padding-bottom: 150px !important;
@@ -495,6 +504,9 @@ body {
 }
 
 @media (max-width: 320px) {
+  .danger {
+    height: 100vh;
+  }
   .danger .swiper-container .swiper-slide {
     margin-bottom: 100px;
   }
@@ -742,6 +754,7 @@ body {
 
 @media (max-width: 320px) {
   .news {
+    height: 100vh;
     padding-top: 30px !important;
     padding-bottom: 30px !important;
   }

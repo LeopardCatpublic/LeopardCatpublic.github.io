@@ -41,6 +41,9 @@ body {
     img {
         width: 100px;
     }
+    @media(max-width:320px){
+       display:none;
+    }
 }
 
 //nav滾動效果
@@ -227,7 +230,7 @@ body {
     }
 
     @media (max-width:320px) {
-
+height:100vh;
         .tab1 {
             margin: 10px !important;
             padding-bottom: 150px !important;
@@ -576,6 +579,7 @@ body {
     }
 
     @media(max-width:320px) {
+        height: 100vh;
         .swiper-container {
 
             .swiper-slide {
@@ -857,6 +861,7 @@ body {
     }
 
     @media (max-width:320px) {
+        height:100vh;
         padding-top: 30px !important;
         padding-bottom: 30px !important;
         .title {
