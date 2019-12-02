@@ -14,9 +14,7 @@ $lineheightin320:20px;
 $nav-backgroundcolor:#bdc0ba;
 $backgroundcolor:#ededed;
 $whitebackground:#ffffff;
-$fontfamily: 'Noto Sans TC',
-sans-serif;
-
+$fontfamily: 'Noto Sans TC',sans-serif;
 $bordercolor : #000000;
 $title-textcolor : #4e4e4e;
 $dropDown : true;
@@ -41,7 +39,7 @@ body {
     img {
         width: 100px;
     }
-    @media(max-width:320px){
+    @media(max-width:400px){
        display:none;
     }
 }
@@ -96,7 +94,7 @@ body {
         }
     }
 
-    @media(max-width:320px) {
+    @media(max-width:400px) {
         height: 50px;
 
         #logoimg {
@@ -229,7 +227,7 @@ body {
 
     }
 
-    @media (max-width:320px) {
+    @media (max-width:400px) {
 height:100vh;
         .tab1 {
             margin: 10px !important;
@@ -578,7 +576,7 @@ height:100vh;
         }
     }
 
-    @media(max-width:320px) {
+    @media(max-width:400px) {
         height: 100vh;
         .swiper-container {
 
@@ -731,7 +729,7 @@ height:100vh;
 
     }
 
-    @media (max-width:320px) {
+    @media (max-width:400px) {
         padding-top: 50px;
 
         .text {
@@ -860,7 +858,7 @@ height:100vh;
 
     }
 
-    @media (max-width:320px) {
+    @media (max-width:400px) {
         height:100vh;
         padding-top: 50px !important;
         padding-bottom: 50px !important;
@@ -1093,7 +1091,7 @@ footer {
         }
     }
 
-    @media (max-width:320px) {
+    @media (max-width:400px) {
         height: 80px !important;
         p {
             font-size: $textin320 !important;
