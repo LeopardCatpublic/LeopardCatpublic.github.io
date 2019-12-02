@@ -96,7 +96,16 @@ body {
 
     @media(max-width:500px) {
         height: 50px;
+        .nav-link {
+          
+            &:not(.disabled) {
 
+                &:hover,
+                &:focus {
+                  background-image: none !important;
+                }
+            }
+        }
         #logoimg {
             width: 100px;
         }
@@ -140,6 +149,7 @@ body {
                     background-image: url("../img/navhover.png");
                     background-position: center;
                     background-size: cover;
+                  
                 }
             }
         }
@@ -229,6 +239,7 @@ body {
 
     @media (max-width:500px) {
 height:100vh;
+
         .tab1 {
             margin: 10px !important;
             padding-bottom: 150px !important;

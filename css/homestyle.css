@@ -80,6 +80,9 @@ body {
   .navbar {
     height: 50px;
   }
+  .navbar .nav-link:not(.disabled):hover, .navbar .nav-link:not(.disabled):focus {
+    background-image: none !important;
+  }
   .navbar #logoimg {
     width: 100px;
   }
