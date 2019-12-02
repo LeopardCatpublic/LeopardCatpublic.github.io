@@ -1,7 +1,8 @@
 body{
    margin: 0;
    padding: 0;
-   overflow-x: hidden; 
+   overflow-x: hidden;
+   overflow: hidden; 
   }
 
 section{
@@ -15,9 +16,7 @@ section{
    background: url("./img/bg.png") no-repeat;
    background-repeat:no-repeat;
    background-size: contain;
-   perspective-origin: center;
-   transform: perspective(500px);
-   overflow: hidden; 
+   /* transform: perspective(500px); */
    position: relative;
   }
 
@@ -29,14 +28,18 @@ width: 100%;
 position: relative;
 }
 
-.parallax_space2{
+/* .parallax_space2{
 position: relative;
-z-index: 99;  
-}
+} */
 
+ /* <!-- LOGO位置 --> */
+.logo{
+position: absolute;
+z-index: 99;   
+}
+    
 .parallax_layer{
 position: absolute;
-overflow: hidden;  
 }
 
  /* <!-- 植物位置 --> */
@@ -84,25 +87,33 @@ z-index: 1;
 
 
 
-@media (max-width: 320px) {
+@media (max-width: 480px) {
 
   section{
+  width: 100vw;  
   height: 100vh;
-  overflow: hidden;  
+ 
 }
    
  .parallax_camera{
   background-size: cover;
- 
-} 
+ } 
 
-.parallax_space2{
-top:70px;
-transform: scale(2);
+
+.parallax_layer.logo{
+  top:-20px;
+  transform: scale(0.75);
 }
 
+.parallax_layer.bird{
+opacity: 0;  
+}
+
+
 .parallax_space{
-  right:25%;
-  transform: scale(3.2);
-  }
+opacity: 1;
+top:120px;
+transform: scale(2.75)
+}
+  
 } 
