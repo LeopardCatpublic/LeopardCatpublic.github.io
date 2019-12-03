@@ -10,9 +10,9 @@ var timelineSwiper = new Swiper ('.timeline .swiper-container', {
   paginationClickable: true,
   nextButton: '.swiper-button-next',
   prevButton: '.swiper-button-prev',
-  // 尺寸
+ 
   breakpoints: {
-    768: {
+    1200: {
       direction: 'horizontal',
     }
   }
