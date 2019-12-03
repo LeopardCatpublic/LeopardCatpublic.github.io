@@ -94,7 +94,7 @@
 }
 .timeline .swiper-slide .timeline-title {
   color:#4b4b4b;
-  font-weight: 600;
+  /* font-weight: 600; */
   margin: 0 0 20px 0;
   opacity: 0;
   -webkit-transform: translate3d(20px, 0, 0);
@@ -273,7 +273,7 @@
   /* 隱藏 */
   .timeline .swiper-slide .timeline-title {
     color:#4b4b4b;
-    font-weight: 600;
+    /* font-weight: 600; */
     opacity: 0;
     -webkit-transform: translate3d(20px, 0, 0);
             transform: translate3d(20px, 0, 0);
