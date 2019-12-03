@@ -10,8 +10,10 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
     integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 <!-- bootstrap -->
+<!-- <link rel="stylesheet" href="../css/bubblestyle.css"> -->
 <link rel="stylesheet" href="../css/index_style.css">
 <link rel=stylesheet type="text/css" href="../css/homestyle.css">
+
 
 <!-- style -->
 
@@ -464,39 +466,113 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
+                    <div class="bubble">
+                        <div id="js-curtain" class="curtain">
+                            <div class="curtain__progress-text">loading..</div>
+                            <div id="js-progress-gradient" class="curtain__progress-text-gradient"></div>
+                            <div id="js-progress" class="curtain__progress"></div>
+                        </div>
+                        <div id="js-close-btn" class="close">
+                            <div id="js-close-btn-inner" class="close__inner"></div>
+                        </div>
+                        <div id="js-content" class="content">
+                            <div id="js-dust-1" class="dust dust--1 sprite">
+                            </div>
+                            <div id="js-dust-2" class="dust dust--2 sprite">
+                            </div>
+                            <div id="js-dust-3" class="dust dust--3 sprite">
+                            </div>
+                            <div id="js-content-inner" class="content__inner">
+                                <div class="project">
+                                    <div class="project__img">
+                                        <img src="../img/origin-img/1.jpg" id="cat-image" class="image" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="js-badge" class="badge"></div>
+                        <div id="js-wrapper" class="wrapper">
+                            <div id="scroller" class="particles">
+                                <div class="blob-circle-wrap">
+                                    <div id="js-blob-circle" class="blob-circle sprite">
+
+                                    </div>
+                                </div>
+
+                                <!-- <div id="js-particle-1" data-left="175" data-top="0" style="left: 175px; top: 0px" class="particle">
+                                            <div style="background: #FC2D79" class="particle__inner"></div>
+                                        </div>
+                                        <div id="js-particle-2" data-left="350" data-top="0" style="left: 350px; top: 0px" class="particle">
+                                            <div style="background: #FC2D79" class="particle__inner"></div>
+                                        </div>
+                                        <div id="js-particle-3" data-left="525" data-top="0" style="left: 525px; top: 0px" class="particle">
+                                            <div style="background: #FCB635" class="particle__inner"></div>
+                                        </div> -->
+
+                            </div>
+                        </div>
+                    </div>
                     <!-- 備案 -->
                     <!-- <div class="container-fluid"> -->
                     <div class="gallery_swiper swiper-container">
                         <div class="swiper-wrapper">
+                            
                             <div class="swiper-slide"
-                                style="background-image:url(https://storage.googleapis.com/www-cw-com-tw/article/201810/article-5bd182cf13ebb.jpg)">
+                                style="background-image:url(../img/origin-img/1.jpg)">
                             </div>
                             <div class="swiper-slide"
-                                style="background-image:url(https://storage.googleapis.com/www-cw-com-tw/article/201810/article-5bd182cf13ebb.jpg)">
+                                style="background-image:url(../img/origin-img/2.jpg)">
                             </div>
                             <div class="swiper-slide"
-                                style="background-image:url(https://storage.googleapis.com/www-cw-com-tw/article/201810/article-5bd182cf13ebb.jpg)">
+                                style="background-image:url(../img/origin-img/3.jpg)">
                             </div>
                             <div class="swiper-slide"
-                                style="background-image:url(https://storage.googleapis.com/www-cw-com-tw/article/201810/article-5bd182cf13ebb.jpg)">
+                                style="background-image:url(../img/origin-img/4.jpg)">
                             </div>
                             <div class="swiper-slide"
-                                style="background-image:url(https://storage.googleapis.com/www-cw-com-tw/article/201810/article-5bd182cf13ebb.jpg)">
+                                style="background-image:url(../img/origin-img/5.jpg)">
                             </div>
                             <div class="swiper-slide"
-                                style="background-image:url(https://storage.googleapis.com/www-cw-com-tw/article/201810/article-5bd182cf13ebb.jpg)">
+                                style="background-image:url(../img/origin-img/6.jpg)">
                             </div>
                             <div class="swiper-slide"
-                                style="background-image:url(https://storage.googleapis.com/www-cw-com-tw/article/201810/article-5bd182cf13ebb.jpg)">
+                                style="background-image:url(../img/origin-img/7.jpg)">
                             </div>
                             <div class="swiper-slide"
-                                style="background-image:url(https://storage.googleapis.com/www-cw-com-tw/article/201810/article-5bd182cf13ebb.jpg)">
+                                style="background-image:url(../img/origin-img/8.jpg)">
                             </div>
                             <div class="swiper-slide"
-                                style="background-image:url(https://storage.googleapis.com/www-cw-com-tw/article/201810/article-5bd182cf13ebb.jpg)">
+                                style="background-image:url(../img/origin-img/9.jpg)">
                             </div>
                             <div class="swiper-slide"
-                                style="background-image:url(https://storage.googleapis.com/www-cw-com-tw/article/201810/article-5bd182cf13ebb.jpg)">
+                                style="background-image:url(../img/origin-img/10.jpg)">
+                            </div>
+                            <div class="swiper-slide"
+                                style="background-image:url(../img/origin-img/11.jpg)">
+                            </div>
+                            <div class="swiper-slide"
+                                style="background-image:url(../img/origin-img/12.jpg)">
+                            </div>
+                            <div class="swiper-slide"
+                                style="background-image:url(../img/origin-img/13.jpg)">
+                            </div>
+                            <div class="swiper-slide"
+                                style="background-image:url(../img/origin-img/14.jpg)">
+                            </div>
+                            <div class="swiper-slide"
+                                style="background-image:url(../img/origin-img/15.jpg)">
+                            </div>
+                            <div class="swiper-slide"
+                                style="background-image:url(../img/origin-img/16.jpg)">
+                            </div>
+                            <div class="swiper-slide"
+                                style="background-image:url(../img/origin-img/17.jpg)">
+                            </div>
+                            <div class="swiper-slide"
+                                style="background-image:url(../img/origin-img/18.jpg)">
+                            </div>
+                            <div class="swiper-slide"
+                                style="background-image:url(../img/origin-img/19.jpg)">
                             </div>
                         </div>
                         <!-- Add Pagination -->
@@ -504,6 +580,7 @@
 
                     </div>
                     <!-- 備案 -->
+
                 </div>
             </div>
         </div>
@@ -536,10 +613,17 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <!-- Swiper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/1.1.26/howler.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/mojs/0.119.0/mo.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/hammerjs/2.0.4/hammer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.1/iscroll-probe.min.js"></script>
+    <!-- bubble -->
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="../javascript/bubble.js"></script>
     <script src="../javascript/swiper.js"></script>
     <script src="../javascript/tab.js"></script>
     <script src="../javascript/script.js"></script>
+ 
 </body>
 
 </html>
