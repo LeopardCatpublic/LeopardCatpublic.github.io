@@ -20,6 +20,8 @@ padding: 0;
   width: 100%;
   position: relative;
 }
+
+/* 背景跳動 */
 .timeline .swiper-wrapper {
   transition: 2s cubic-bezier(0.68, -0.4, 0.27, 1.34) 0.2s;
 }
@@ -32,11 +34,6 @@ padding: 0;
   background-repeat: no-repeat;  
 }
 
-.swiper-bg{
-  width: 100%;
-  height: 100%;
-}
-
 /* 大小不同更改 */
 .timeline .swiper-slide::after {
   content: "";
@@ -45,9 +42,10 @@ padding: 0;
   right: -115%;
   bottom: -10%;
   width: 100vw;
-  height: 100vh;
- 
-  }
+  height: 100vh; 
+}
+
+ /* 320灰色背景底圖  */
 .timeline .swiper-slide-content {
   position: absolute;
   text-align: center;
@@ -64,7 +62,7 @@ padding: 0;
   font-size: 25px;
   z-index: 2;
 }
-
+ /* 320灰色背景底圖2  */
 .timeline .swiper-slide-content2 {
   position: absolute;
   text-align: center;
@@ -81,7 +79,7 @@ padding: 0;
   font-size: 25px;
   z-index: 2;
 }
-
+ /* 320灰色背景底圖3  */
 .timeline .swiper-slide-content3 {
   position: absolute;
   text-align: center;
@@ -101,7 +99,6 @@ padding: 0;
 .timeline .swiper-slide .timeline-title {
   color:#4b4b4b;
   font-weight: 600;
-  font-size: 50px;
   margin: 0 0 20px 0;
   opacity: 0;
   -webkit-transform: translate3d(20px, 0, 0);
@@ -116,7 +113,7 @@ padding: 0;
           transform: translate3d(20px, 0, 0);
   transition: .2s ease .6s;
 }
-
+ /* 320標題 */
 .timeline .swiper-slide-active .timeline-title {
   opacity: 1;
   padding: 35px 0 15px 40px;
@@ -125,6 +122,7 @@ padding: 0;
           transform: translate3d(0, 0, 0);
   transition: .4s ease 1s;
 }
+ /* 320內文 */
 .timeline .swiper-slide-active .timeline-text {
   opacity: 1;
   padding: 0 40px;
@@ -133,6 +131,8 @@ padding: 0;
           transform: translate3d(0, 0, 0);
   transition: .4s ease 1s;
 }
+
+/* 側邊區域 */
 .timeline .swiper-pagination {
   right: 15% !important;
   height: 100%;
@@ -181,16 +181,16 @@ padding: 0;
           transform: scale(0);         
   transition: .2s;
 }
-/*選到的顏色*/
+/*側邊字選到的顏色*/
 .timeline .swiper-pagination-bullet-active {
   color: rgb(100, 100, 100);
 
 }
 .timeline .swiper-pagination-bullet-active::before {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
-/* 箭頭大小位置 */
+  /* 320箭頭區  */
 .timeline .swiper-button-next,
 .timeline .swiper-button-prev {
   background-size:100%;
@@ -201,22 +201,21 @@ padding: 0;
   z-index: 2;
   transition: .1s;
 }
+  /* 320箭頭區  */
 .timeline .swiper-button-prev {
   top: 3%;
-  left: 18%;
- 
+  left: 18%; 
 }
-
+  /* 320箭頭區  */
 .timeline .swiper-button-next {
   top: 3%;
   right: 18%;
-
 } 
 
 
 /* 一開始的大小位置 */
 @media screen and (min-width: 1200px) {
-
+ /* 灰色背景底圖  */
   .timeline .swiper-slide-content {
     right: 25%;
     top: 50%;
@@ -229,7 +228,7 @@ padding: 0;
     text-align: left;
   }
   
-
+ /* 灰色背景底圖2  */
   .timeline .swiper-slide-content2 {
     right: 25%;
     top: 50%;
@@ -241,7 +240,7 @@ padding: 0;
     background-image: url("./img/timebg.jpg");
     text-align: left;
   }
-  
+   /* 灰色背景底圖3  */
     .timeline .swiper-slide-content3 {
     right: 25%;
     top: 50%;
@@ -254,15 +253,10 @@ padding: 0;
     text-align: left;
   }
   
-  .timeline .swiper-slide .timeline-title {
-    font-size: 20px;
-    margin: 20px;
-  }
+  /* 隱藏 */
   .timeline .swiper-slide .timeline-title {
     color:#4b4b4b;
     font-weight: 600;
-    font-size: 20px;
-    margin: 0 0 20px 0;
     opacity: 0;
     -webkit-transform: translate3d(20px, 0, 0);
             transform: translate3d(20px, 0, 0);
@@ -276,7 +270,7 @@ padding: 0;
             transform: translate3d(20px, 0, 0);
     transition: .2s ease .6s;
   }
-  
+    /* 一開始的標題  */
   .timeline .swiper-slide-active .timeline-title {
     opacity: 1;
     top:20%;
@@ -285,29 +279,31 @@ padding: 0;
             transform: translate3d(0, 0, 0);
     transition: .4s ease 1s;
   }
+  /* 一開始的內文  */
   .timeline .swiper-slide-active .timeline-text {
     opacity: 1;
-       font-size: 25px;
+    font-size: 25px;
     -webkit-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0);
     transition: .4s ease 1s;
   }
 
+   /* 箭頭區  */
  .timeline .swiper-pagination {
     display: flex;
   }
+    /* 箭頭區  */
   .timeline .swiper-button-prev {
     top: 25%;
     left: auto;
-    right: 17%;
-    
+    right: 17%; 
   }
-
+  /* 箭頭區  */
   .timeline .swiper-button-next {
     top: auto;
     bottom: 25%;
     right: 17%;
- } 
+  } 
  
 }
 
