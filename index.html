@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
+    <title>山野閃靈</title>
+
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
     integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 <!-- bootstrap -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css'>
+<!-- timeline -->
+<link rel="stylesheet" href="../css/timeline_style.css">
+
 <link rel="stylesheet" href="../css/index_style.css">
 <link rel=stylesheet type="text/css" href="../css/homestyle.css">
 <!-- style -->
 <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
 <!-- introduce swiper -->
 <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+</head>
 <body>
     <section class="home">
         <div class="container-fluid">
@@ -133,35 +138,40 @@
     </section>
 
     <section id="distributed" class="distributed">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-xl-6 p-0">
-                    <div class="distr_card1">
-                        <div class="text">
-                            <h3>Section2</h3>
-                            <h1>石虎分佈地區</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, autem! Culpa unde
-                                pariatur
-                                eius deserunt eos, doloribus rerum delectus iure sunt libero laborum dolorem molestiae
-                                architecto corporis iste illo aut, earum similique iusto officia quidem distinctio est.
-                                Architecto perspiciatis in laudantium deserunt quasi? Soluta doloremque temporibus
-                                explicabo
-                                facilis! Eum error beatae numquam maxime quaerat commodi, provident itaque voluptatum
-                                possimus dolorum placeat praesentium quasi repellat! Nemo neque modi similique.
-                                Reprehenderit nihil, aspernatur quasi natus neque enim, debitis sed dignissimos ratione
-                                animi sint et maxime harum? Quos minus velit id ullam voluptates tempora nisi! Explicabo
-                                necessitatibus recusandae inventore ratione nulla eveniet laudantium.</p>
+        <div class="timeline">
+            <div class="timeline_swiper swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image: url(../img/1-1.jpg)" data-year="過去石虎分布">
+                        <div class="swiper-slide-content">
+                            <div class="timeline-title">過去石虎分布</div>
+                            <div class="timeline-text">二十世紀初的日治時期，根據日本學者的調查報告，石虎當時廣泛分布於全臺灣1500公尺以下。
+                                1930年代石虎曾廣泛分佈於臺灣淺山丘陵地區；1970年代起，石虎的紀錄變得罕見且分佈狀況不明。</div>
                         </div>
-                        <div class="timeline"></div>
                     </div>
-                </div>
-                <div class="col-12 col-xl-6 p-0">
-                    <div class="distr_card2">
-                        <div class="map_img"></div>
+
+                    <div class="swiper-slide" style="background-image: url(../img/1-2.jpg)" data-year="現在石虎分布">
+                        <div class="swiper-slide-content2">
+                            <div class="timeline-title">現在石虎分布</div>
+                            <div class="timeline-text">僅苗栗、台中與南投有較多的發現紀錄，彰化與嘉義偶有零星紀錄。
+                                近幾年的擴散紀錄只有數筆。但這樣的個案，可能只是某隻年輕石虎向外擴散牠的新領地，或者數量稀少而非穩定的族群。</div>
+                        </div>
                     </div>
+
+                    <div class="swiper-slide" style="background-image: url(../img/1-3.jpg)" data-year="潛在棲地">
+                        <div class="swiper-slide-content3">
+                            <div class="timeline-title">潛在棲地</div>
+                            <div class="timeline-text">苗栗、台中、南投為目前主要棲地，往外延伸潛在棲地，理論上適合棲地但除嘉義之外，近年還無發現紀錄。</div>
+                        </div>
+                    </div>
+
                 </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-pagination"></div>
             </div>
         </div>
+
+
     </section>
 
     <section id="danger" class="danger">
@@ -568,17 +578,24 @@
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
     <!-- Swiper JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/1.1.26/howler.min.js"></script>
     <script src="https://cdn.jsdelivr.net/mojs/0.119.0/mo.min.js"></script>
     <script src="https://cdn.jsdelivr.net/hammerjs/2.0.4/hammer.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.1/iscroll-probe.min.js"></script>
     <!-- bubble -->
+    
+ 
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js'></script>
+    <script src="../javascript/timeline.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <script src="../javascript/bubble.js"></script>
     <script src="../javascript/swiper.js"></script>
     <script src="../javascript/tab.js"></script>
     <script src="../javascript/script.js"></script>
+    
 
 </body>
 

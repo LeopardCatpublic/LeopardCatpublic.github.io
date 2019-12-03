@@ -306,35 +306,6 @@ body {
   line-height: 70px;
 }
 
-.distributed {
-  padding-top: 110px;
-  background-color: #d1d1d1;
-  text-align: center;
-  width: 100vw;
-  height: 1080px;
-  position: relative;
-}
-
-.distributed .container {
-  margin: auto;
-}
-
-.distributed .container .distr_card1 .text {
-  background-color: #818181;
-  margin: auto;
-  padding: 20px;
-}
-
-.distributed .container .distr_card1 .text p {
-  margin: 0;
-}
-
-.distributed .container .distr_card2 {
-  background-color: blanchedalmond;
-  height: 600px;
-  margin-bottom: 30px;
-}
-
 .danger {
   padding-top: 110px;
   background-color: #ededed;
