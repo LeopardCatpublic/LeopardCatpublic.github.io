@@ -16,16 +16,12 @@ var swiper_news = new Swiper('#news_swiper', {
     prevEl: '.swiper-button-prev',
   },
 });
-
-
-
 var swiper_protect = new Swiper('.protect_swiper', {
   //不能用id查找 事件裡的swiper-container太多 用另一個class抓取
   effect: 'flip',
   grabCursor: true,
 
 });
-
 var swiper = new Swiper('.danger_swiper', {
   slidesPerView: 'auto',
   centeredSlides: true,
@@ -36,21 +32,6 @@ var swiper = new Swiper('.danger_swiper', {
     clickable: true,
   },
 });
-$(document).ready(function () {
-  $(window).resize(function () {
-    var ww = $(window).width()
-    if (ww > 1200) {
-      swiper_news.params.slidesPerView = 3;
-    }
-    if (ww < 1200) {
-      swiper_news.params.slidesPerView = 1;
-    }
-
-    // swiper_news.reInit()
-  });
-  // $(window).trigger('resize')
-});
-
 var gallery_swiper = new Swiper('.gallery_swiper', {
   effect: 'coverflow',
   grabCursor: true,
@@ -67,4 +48,18 @@ var gallery_swiper = new Swiper('.gallery_swiper', {
   pagination: {
     el: '.swiper-pagination',
   },
+});
+
+$(document).ready(function () {
+  $(window).resize(function () {
+    var ww = $(window).width()
+    if (ww > 1200) {
+      swiper_news.params.slidesPerView = 3;
+    }
+    if (ww < 1200) {
+      swiper_news.params.slidesPerView = 1;
+    }
+    // swiper_news.reInit()
+  });
+  // $(window).trigger('resize')
 });

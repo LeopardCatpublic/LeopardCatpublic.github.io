@@ -1,13 +1,26 @@
-body {
+.gallery {
     background: #fff;
-    font-size: 16px;
     margin: 0;
     padding: 0;
     user-select: none;
     overflow: hidden;
-    font-family: Open Sans, sans-serif;
     min-width: 768px;
+    height:1080px;
+    width:100vw;
   }
+  .box2{
+    width:100vw;
+    height:1080px;
+  }
+  .particles {
+    margin-left: -200px;
+    margin-top: -175px;
+}
+
+.desktop .particles {
+    width: 2450px;
+    height: 1600px;
+}
   .curtain {
     width: 100%;
     height: 100%;
@@ -50,7 +63,7 @@ body {
     height: 1rem;
     z-index: 1;
     transition: transform 0.3s ease-out;
-    background: linear-gradient(to right, #fff; 20%, #fff; 50%);
+    background: linear-gradient(to right, #fff, 20%, #fff, 50%);
   }
   .curtain.is-hide {
     opacity: 0;
