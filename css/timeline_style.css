@@ -9,6 +9,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  font-family:'Noto Sans TC',sans-serif;;
 }
 .timeline .swiper-container {
   height: 100vh;
