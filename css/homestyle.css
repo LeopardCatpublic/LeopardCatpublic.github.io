@@ -175,8 +175,8 @@ body {
     padding-bottom: 500px;
   }
   .introduce .tab2 .imgcontent {
-    width: 300px !important;
-    top: 75% !important;
+    width: 500px !important;
+    top: 65% !important;
     right: 50% !important;
     -webkit-transform: translateX(50%) !important;
             transform: translateX(50%) !important;
@@ -692,7 +692,7 @@ body {
 .news .title {
   font-size: 64px;
   font-family: "Noto Sans TC", sans-serif;
-  text-align: left;
+  text-align: center;
   margin: auto;
   margin-bottom: 50px;
   letter-spacing: 3px;
@@ -851,6 +851,7 @@ body {
 
 .news .swiper-slide .text .title {
   margin: 15px 0 0px 0;
+  text-align: left !important;
   min-height: 66px;
   font-size: 32px;
   color: #4e4e4e;
@@ -897,7 +898,6 @@ body {
   background-color: #d1d1d1;
   text-align: center;
   width: 100vw;
-  height: 1080px;
   position: relative;
   margin: 0;
   padding: 0;
@@ -917,13 +917,11 @@ body {
 }
 
 .gallery .bubble {
-  background: #fff;
   margin: 0;
   padding: 0;
   overflow: hidden;
   min-width: 768px;
-  height: 1080px;
-  width: 100vw;
+  height: 1000px;
 }
 
 .gallery .particles {
@@ -938,7 +936,6 @@ body {
 
 .gallery .curtain {
   width: 100%;
-  height: 100%;
   position: fixed;
   top: 0;
   left: 0;
@@ -1009,7 +1006,8 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  overflow-x: hidden;
+  overflow: hidden;
+  height: 1080px;
 }
 
 .gallery .particles {
@@ -1267,8 +1265,6 @@ body {
   width: 0px;
   height: 0px;
   overflow: hidden;
-  overflow-y: scroll;
-  overflow-y: scroll;
 }
 
 .gallery .close {
