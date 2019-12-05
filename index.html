@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>山野閃靈</title>
 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
     integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 <!-- bootstrap -->
@@ -20,6 +23,7 @@
 <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
 <!-- introduce swiper -->
 <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <section class="home">
@@ -92,7 +96,8 @@
 
     <section id="introduce" class="introduce">
         <div class="container">
-            <div class="row">
+            <div class="row" data-aos="fade-up"
+            data-aos-duration="3000">
                 <div class="col-12 col-xl-6 p-0 order-12 order-xl-0">
                     <div class="tab1">
                         <div class="tab_btn_content">
@@ -138,7 +143,8 @@
     </section>
 
     <section id="distributed" class="distributed">
-        <div class="timeline">
+        <div class="timeline" data-aos="fade-up"
+        data-aos-duration="3000">
             <div class="timeline_swiper swiper-container">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide" style="background-image: url(../img/1-1.jpg)" data-year="過去石虎分布">
@@ -176,7 +182,8 @@
 
     <section id="danger" class="danger">
         <div class="container-fluid">
-            <div class="row">
+            <div class="row"data-aos="fade-up"
+            data-aos-duration="3000">
                 <div class="col-12 p-0">
                     <div class="danger_swiper swiper-container">
                         <div class="swiper-wrapper">
@@ -234,7 +241,8 @@
         </div>
     </section>
 
-    <section id="protect" class="protect">
+    <section id="protect" class="protect"  data-aos="fade-up"
+    data-aos-duration="3000">
         <div class="container">
             <div class="text">
                 <p class="title">救救石虎</p>
@@ -258,7 +266,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-xl-3 p-0">
-                    <div class=" box1">
+                    <div class=" box1" >
                         <div class="protect_swiper swiper-container">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide" style="background-image:url(../img/protect2.png)">
@@ -308,7 +316,8 @@
 
     <section id="news" class="news">
         <div class="container-fluid">
-            <div class="row">
+            <div class="row" data-aos="fade-up"
+            data-aos-duration="3000">
                 <div class="col-12">
                     <div class="title">
                         相關報導
@@ -459,7 +468,8 @@
 
     <section id="gallery" class="gallery">
         <div class="container-fluid">
-            <div class="row">
+            <div class="row" data-aos="fade-up"
+            data-aos-duration="3000">
                 <div class="col-12">
                     <div class="bubble">
                         <div id="js-curtain" class="curtain">
@@ -586,7 +596,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.1/iscroll-probe.min.js"></script>
     <!-- bubble -->
     
- 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js'></script>
     <script src="../javascript/timeline.js"></script>
@@ -596,6 +607,9 @@
     <script src="../javascript/tab.js"></script>
     <script src="../javascript/script.js"></script>
     
+    <script>
+        AOS.init();
+      </script>
 
 </body>
 
